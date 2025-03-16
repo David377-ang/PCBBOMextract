@@ -240,18 +240,21 @@ def extract_location_texts(file_name):
     # 打開並讀取檔案
     with open(file_name, "r", encoding="utf-8") as file:
         content = file.read()
-        # 使用正則表達式匹配所有資料
+        # 匹配所有模式
         matches = re.finditer(pattern, content)
         for match in matches:
-            item = match.group(1).strip()  # 抓取 Item
-            description = match.group(2).strip()  # 抓取 Description
-            locations = match.group(3).replace("\n", " ").replace("|", "").strip()  # 抓取並合併多行 Location Texts
+            item = match.group(1).strip()  # 提取 Item
+            description = match.group(2).strip()  # 提取 Description
+            locations = match.group(3).replace("\n", " ").replace("|", "").strip()  # 合併多行
             locations = re.sub(r"\s{2,}", " ", locations)  # 消除多餘空格
-            results.append((item, description, locations))
+
+            # 將 Locations 拆分為獨立項目
+            for location in locations.split():
+                results.append((item, description, location))
 
         # 輸出結果
-        for item, description, location in results:
-            print(f"Item: {item}, Description: {description}, Location Texts: {location}")
+        # for item, description, location in results:
+        #     print(f"Item: {item}, Description: {description}, Location Texts: {location}")
 
     return results
 
