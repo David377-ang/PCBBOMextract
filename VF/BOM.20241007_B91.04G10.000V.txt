@@ -1,0 +1,243 @@
+ Date   :24/10/07
+                                    MULIT-LEVEL PRODUCTION BOMS                                                      Page      :    1 
+Wiwynn PCBA Company                                                                                                Company   :  F9C1
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Manufactured Item     :  B91.04G10.000V  YV3.5 MP VF2.0 HSC MAXIM EFUSE TI                           Unit: PCS 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   Level|Position|                                     Item|Description                     |Effect.|Expiry|Item Type|Ph|B/|Itm|  Net Quantity|No.o|Scp|Wrh|  Remark  |Green Factor
+        |        ||                                |   Date|  Date|         |tm|F |Grp|              | Un.|[%]|   |          |
+--------+--------++--------------------------------+-------+------+---------+--+--+---+--------------+----+---+---+----------+----------------------------------------------------------
+                 |Location  Texts
+________________________________________________________________________________________________________________________________________________________________________________________________________
+1       |  10/  1|B55.04G2K.0002|CARD YV3.5 MP VF2.0 HSC MAX EFUS| 230530|      |Manufactu| N| N|  0|        1.0000|   0|  0|  0|          |R2
+1       |  10/  1|BP0.DESPK.0021|DES PACKET CLAY ESD 3G          | 240822|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       |  80/  1|B44.01701.0011|CTN W/ LOGO 390*325*325MM AB,OD,| 240920|      |Purchased| N| Y|  0|        0.0400|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       |  90/  1|B46.00X01.0001|CORNER BOARD ,980*50*50*3MM     | 240830|      |Purchased| N| Y|  0|        0.0060|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 100/  1|B47.01U04.0001|CSN 375*305*20MM                | 241002|      |Purchased| N| Y|  0|        0.0400|   0|  0|  0|          |R2_SA;HF_SA
+1       | 110/  1|B47.01U09.0001|CSN 375X 310X 53MM              | 241003|      |Purchased| N| Y|  0|        0.2000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 120/  1|B47.0261C.0001|PLT 1200*1000*120               | 241005|      |Purchased| N| Y|  0|        0.0020|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 130/  1|B47.04T0H.0001|CORNER BOARD CORNER BOARD,860*50| 240801|      |Purchased| N| Y|  0|        0.0030|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 140/  1|BP6.10803.0001|PAD 1150*950MM PAPER SHEET,18KG,| 241003|      |Purchased| N| Y|  0|        0.0020|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 150/  1|BP0.C0RNR.00A1|CORNER BOARD 1050*50*50*3MM     | 241002|      |Purchased| N| Y|  0|        0.0030|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 160/  1|BP2.SDESD.00E1|BAG SHD 127*204*0.08MM GRAY     | 240930|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 170/  1|BL1.ARTWK.0041|LBL ARTWK 124*40*0.07MM C2195 BL| 240801|      |Purchased| N| N|  0|        0.0400|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 180/  1|BL2.02600.0051|LBL 50*25MM YV3 ESD CAUTION LBL | 240913|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+1       | 190/  1|BP2.ZPBAG.0011|BAG ZIP 240*340*0.06MM TRANSPARE| 240913|      |Purchased| N| Y|  0|        0.0020|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  10/  1|020.C1155.0056|CONN MINI COOL EDGE 56P ME100563| 240809|      |Purchased| N| N|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |J4_1 J6_1 J7_1
+.2      |  10/  1|B86.MAN00.0008|SCR HEX/W PHLP MACH M3 L5.5 MM N| 240829|      |Purchased| N| N|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  20/  1|038.02001.02A1|SOLDER PASTE PF606-P245-T4      | 241002|      |Purchased| N| Y|  0|        0.6000|   0|  0|  0|          |R2_SA;HF_SA
+.2      |  20/  1|B86.MMN00.0029|SCR PAN PHLP MACH M1.6 L4 MM NLK| 241002|      |Purchased| N| N|  0|        6.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  30/  1|BL2.10E00.0051|LBL 4*5MM MOAI BLANK,BRADY,B768 | 240830|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  30/  1|B33.02602.0001|YOS_V3_PCB_HANDLE               | 240621|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  40/  1|BL2.0AA00.0011|LBL 23.5*5MM VSTEVB BLANK,BRADY,| 240928|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.2      |  50/  1|B55.04G2K.M002|CARD YV3.5 MP VF2.0 HSC MAX EFUS| 230530|      |Manufactu| N| N|  0|        1.0000|   0|  0|  0|          |R2
+.3      |  10/  1|B8A.SMM81.0001|SMT THSCR D11.5 H8 M3 GN        | 240830|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |H3
+.3      | 350/  1|B64.49D94.0621|CHIP RES PERC 49.9 1/16W F 0402 | 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R254
+.3      | 360/  1|B64.051K4.0621|CHIP RES PERC 51K 1/16W F 0402  | 240824|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R512 R513
+.3      | 370/  1|B64.5K114.0621|CHIP RES PERC 5.11K 1/16W F 0402| 240905|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R664
+.3      | 380/  1|B64.5K364.0621|CHIP RES PERC 5.36K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R11
+.3      | 390/  1|B64.60K44.0621|CHIP RES PERC 60.4K 1/16W F 0402| 240905|      |Purchased| N| Y|  0|        6.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R752 R755 R757 R759 R765 R766
+.3      | 400/  1|B64.750D4.0621|CHIP RES PERC 750 1/16W F 0402  | 240828|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R169 R177 R180
+.3      | 410/  1|B64.075D4.0621|CHIP RES PERC 75 1/16W F 0402   | 240906|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R290
+.3      | 420/  1|B64.90K94.0621|CHIP RES PERC 90.9K 1/16W F 0402| 240801|      |Purchased| N| Y|  0|        4.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R195 R203 R204 R308
+.3      | 430/  1|B64.9K764.0621|CHIP RES PERC 9.76K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R508
+.3      | 450/  1|068.00006.0041|CHIP BEAD 120 2A 0402 BLM15PX121| 240921|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |L6
+.3      | 460/  1|068.00041.0021|CHIP BEAD 100MHZ UPB160808T-121Y| 240702|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |L5
+.3      | 470/  1|068.00045.M001|CHIP BEAD GMLB-201209-0330P-N8-W| 240821|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |L4
+.3      | 480/  1|B71.10301.M005|IC BIC TFBGA 256P FW:2023.29.01 | 240828|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U35
+.3      | 490/  1|071.09537.0001|IC I2C GPIO PCA9537DPZ TSSOP 10P| 240926|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;EF_SA
+                 |U44
+.3      | 500/  1|071.33402.0A03|IC CLK BUF PI6CB33402ZHIEX-13R T| 240803|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |U32
+.3      | 510/  1|B72.24128.0005|IC EEPRM 128 KBIT SOIC 8P       | 240822|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U15
+.3      | 520/  1|073.01708.0001|IC CMOS NL17SZ08DFT2G-F22038 SC-| 240822|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |U42 U43 U46
+.3      | 530/  1|073.01G17.000G|IC CMOS 74LVC1G17SE-7 SOT353 5P | 240822|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U45 U47
+.3      | 540/  1|020.C1154.0056|CONN HS I/O RCT ST 56P LCP ME100| 240809|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |J4 J6 J7
+.3      | 560/  1|B63.100KJ.0621|CHIP RES 100K 1/16W J 0402 (EF) | 241005|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R617 R619
+.3      | 570/  1|B63.033DJ.0621|CHIP RES 33 1/16W J 0402 (EF)   | 241005|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R309
+.3      | 580/  1|B63.4K70J.0621|CHIP RES 4.7K 1/16W J 0402 (EF) | 240930|      |Purchased| N| Y|  0|       16.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R215 R217 R218 R219 R232 R245 R247 R248 R249 R260 R262 R263 R264
+                 |R4580 R4581 R4582 
+.3      | 590/  1|B63.047KJ.0621|CHIP RES 47K 1/16W J 0402 (EF)  | 241005|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R675 R4614
+.3      | 600/  1|B63.000D0.0621|CHIP RES 0 1/16W JUMPER 0402    | 240807|      |Purchased| N| Y|  0|       27.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |PR76 R12 R13 R276 R530 R559 R560 R590 R680 R681 R691 R795 R796
+                 |R4619 R4620 R4627 R4628 R4631 R4632 R4641 R4642 R4651 R4652 R4656
+                 |R4657 R4670 R4671 
+.3      | 610/  1|B63.000DJ.0533|CHIP RES 0 1/10W J 0603 (EF)    | 241005|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R659
+.3      | 620/  1|B64.100D4.0621|CHIP RES PERC 100 1/16W F 0402  | 240824|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R1 R433
+.3      | 630/  1|B64.001K4.0621|CHIP RES PERC 1K 1/16W F 0402 (E| 240930|      |Purchased| N| Y|  0|       10.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R298 R511 R578 R646 R4622 R4630 R4634 R4643 R4653 R4658
+.3      | 640/  1|B64.010K4.0621|CHIP RES PERC 10K 1/16W F 0402 (| 240930|      |Purchased| N| Y|  0|       33.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R90 R171 R174 R179 R182 R191 R193 R200 R202 R286 R288 R307 R319
+                 |R413 R477 R478 R479 R480 R529 R577 R651 R754 R756 R758 R760 R768
+                 |R769 R4621 R4629 R4633 R4639 R4649 R4654 
+.3      | 650/  1|B64.10K24.0621|CHIP RES PERC 10.2K 1/16W F 0402| 240824|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R663
+.3      | 660/  1|B64.010D4.0531|CHIP RES PERC 10 1/10W F 0603 (E| 240928|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R538
+.3      | 670/  1|B64.010D4.0621|CHIP RES PERC 10 1/16W F 0402 (E| 240930|      |Purchased| N| Y|  0|       10.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R226 R227 R256 R257 R271 R272 R426 R427 R428 R429
+.3      | 680/  1|B64.120K4.0621|CHIP RES PERC 120K 1/16W F 0402 | 240919|      |Purchased| N| Y|  0|        4.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R190 R199 R201 R305
+.3      | 690/  1|B64.1K504.0621|CHIP RES PERC 1.5K 1/16W F 0402 | 240906|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R4610
+.3      | 700/  1|B64.001D4.0531|CHIP RES PERC 1 1/10W F 0603 (EF| 240930|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R504
+.3      | 710/  1|B64.200D4.0621|CHIP RES PERC 200 1/16W F 0402  | 240827|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R422
+.3      | 720/  1|B64.002K4.0621|CHIP RES PERC 2K 1/16W F 0402 (E| 240930|      |Purchased| N| Y|  0|        7.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R306 R749 R750 R753 R770 R772 R4588
+.3      | 730/  1|B64.020K4.0621|CHIP RES PERC 20K 1/16W F 0402  | 240913|      |Purchased| N| Y|  0|        6.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R170 R178 R181 R410 R411 R509
+.3      | 740/  1|B64.200K4.0621|CHIP RES PERC 200K 1/16W F 0402 | 240824|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R507
+.3      | 750/  1|B64.220D4.0621|CHIP RES PERC 220 1/16W F 0402  | 240906|      |Purchased| N| Y|  0|        4.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R279 R280 R281 R293
+.3      | 760/  1|B64.022D4.0621|CHIP RES PERC 22 1/16W F 0402   | 240807|      |Purchased| N| Y|  0|      100.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R2 R9 R10 R14 R15 R16 R17 R18 R19 R20 R209 R210 R211 R222 R224
+                 |R225 R238 R251 R255 R268 R269 R270 R277 R278 R289 R291 R400 R401
+                 |R402 R493 R494 R514 R539 R540 R541 R542 R544 R545 R548 R550 R551
+                 |R552 R553 R554 R555 R556 R557 R561 R563 R584 R586 R620 R621 R622
+                 |R623 R624 R625 R626 R630 R631 R632 R633 R634 R660 R665 R666 R667
+                 |R674 R679 R685 R694 R695 R698 R700 R709 R710 R711 R712 R724 R725
+                 |R726 R727 R728 R729 R794 R797 R4584 R4585 R4586 R4587 R4589 R4591
+                 |R4592 R4593 R4594 R4595 R4596 R4607 R4608 R4611 
+.3      | 770/  1|B64.26K74.0621|CHIP RES PERC 26.7K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R175 R183 R184
+.3      | 780/  1|B64.028K4.0621|CHIP RES PERC 28K 1/16W F 0402  | 240807|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R510
+.3      | 790/  1|B64.2K874.0621|CHIP RES PERC 2.87K 1/16W F 0402| 240807|      |Purchased| N| Y|  0|        5.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R746 R747 R751 R767 R771
+.3      | 800/  1|B64.3K304.0621|CHIP RES PERC 3.3K 1/16W F 0402 | 240720|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R296
+.3      | 810/  1|B64.332D4.0621|CHIP RES PERC 332 1/16W F 0402  | 240905|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R579
+.3      | 820/  1|B64.33D24.0621|CHIP RES PERC 33.2 1/16W F 0402 | 240828|      |Purchased| N| Y|  0|        5.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R418 R419 R423 R424 R425
+.3      | 830/  1|B64.3K654.0621|CHIP RES PERC 3.65K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R297
+.3      | 840/  1|B64.4K424.0621|CHIP RES PERC 4.42K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R189 R197 R198
+.3      | 850/  1|B64.4K704.0621|CHIP RES PERC 4.7K 1/16W F 0402 | 240828|      |Purchased| N| Y|  0|       57.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |R283 R285 R295 R412 R505 R519 R527 R532 R565 R566 R568 R571 R572
+                 |R573 R598 R599 R600 R602 R604 R605 R607 R608 R611 R613 R627 R628
+                 |R629 R635 R636 R639 R640 R641 R697 R701 R707 R708 R713 R714 R730
+                 |R731 R733 R734 R735 R738 R775 R776 R788 R4597 R4598 R4599 R4604
+                 |R4605 R4609 R4615 R4616 R4617 R4618 
+.3      | 860/  1|B64.4K754.0621|CHIP RES PERC 4.75K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R7
+.3      | 870/  1|B64.49K94.0621|CHIP RES PERC 49.9K 1/16W F 0402| 240828|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R562 R564
+.3      | 880/  1|B65.510C4.0622|CHIP RES LOW 510C 1/16W F 0402  | 240705|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R661
+.3      | 890/  1|068.00041.0021|CHIP BEAD 100MHZ UPB160808T-121Y| 240702|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |L7 L8 L9
+.3      | 900/  1|074.00075.0AB9|IC SENSOR DS75U+T&R UMAX 8P     | 240629|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |U16
+.3      | 910/  1|074.09059.0033|IC LDO WDFN 10P                 | 241002|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U36
+.3      | 920/  1|B74.15090.0001|IC HOT SWAP FW:0 WLP 28P        | 240927|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U33
+.3      | 930/  1|074.25952.0073|IC EFUSE WSON 8P                | 240823|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U7 U9 U10
+.3      | 940/  1|074.25952.M001|IC HOT SWAP TPS259521DSGR WSOP 8| 231014|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U18
+.3      | 950/  1|074.25954.0073|IC EFUSE TPS259540DSGR WSON 8P(E| 231014|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U3 U5 U6
+.3      | 960/  1|074.52205.M002|IC MONITOR QFN 16P              | 241005|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |U11 U13 U14
+.3      | 970/  1|075.00138.0079|IC MOSFET BSS138BKS,115 NC TSSOP| 240629|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |Q1 Q2
+.3      | 980/  1|B75.67002.0001|IC MOS DUAL NC 6P               | 240926|      |Purchased| N| Y|  0|        6.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |Q5 Q7 Q8 Q9 Q11 Q12
+.3      | 990/  1|B78.01NJH.0001|CHIP CAP 1 NF 50V J 0402 X7R    | 241007|      |Purchased| N| Y|  0|        4.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |C89 C90 C91 C92
+.3      |1000/  1|B78.10NKH.0001|CHIP CAP 10 NF 50V K 0402 X7R   | 240927|      |Purchased| N| Y|  0|        6.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C202 C203 C204 C205 C206 C207
+.3      |1010/  1|B78.U10KF.0003|CHIP CAP 100 NF 25V K 0402 X6S  | 241007|      |Purchased| N| Y|  0|       11.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C72 C73 C74 C78 C79 C80 C81 C82 C83 C84 C85
+.3      |1020/  1|B78.U10KH.0002|CHIP CAP 100 NF 50V K 0402 X7R  | 241007|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |C60 C66 C67
+.3      |1030/  1|B78.01UKC.0001|CHIP CAP 1 UF 16V K 0402 X6S    | 240905|      |Purchased| N| Y|  0|       11.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C216 C217 C218 C223 C224 C229 C230 C231 C232 C234 C239
+.3      |1040/  1|B78.10UM6.0002|CHIP CAP 10UF 6.3V M 0402 X6S   | 240828|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C147 C157
+.3      |1050/  1|B78.10UKF.0001|CHIP CAP 10 UF 25V K 0805 X6S   | 240801|      |Purchased| N| Y|  0|        7.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C51 C57 C59 C64 C70 C71 C251
+.3      |1060/  1|B78.2U2K9.0002|CHIP CAP 2.2 UF 10V K 0402 X6S  | 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C235
+.3      |1070/  1|B78.22UM6.M001|CHIP CAP 22UF 6.3V M 0603 X6S   | 240913|      |Purchased| N| Y|  0|        5.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C219 C225 C226 C227 C237
+.3      |1080/  1|B78.22UM9.M002|CHIP CAP 22 UF 10V M 0805 X6S   | 240927|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C249
+.3      |1090/  1|B78.4U7M6.0002|CHIP CAP 4.7 UF 6.3V M 0402 X6S | 240917|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C244 C247
+.3      |1100/  1|B82.00003.000N|OSC 3.3V 25 MHZ 25PPM           | 240704|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |OSC1
+.3      |1110/  1|083.00013.0AAD|DIODE TVS 13V SMCJ13A SMC       | 240803|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |D23
+.3      |1120/  1|083.00014.0001|DISCRETE TVS SOD-123FL 2P       | 240803|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |D2 D6 D7
+.3      |1130/  1|B83.10603.0001|LED G EPOXY SMD                 | 241005|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |D11 D24
+.3      |1140/  1|083.01040.008H|DIODE S.B SS1040HE SOD123-HE    | 240803|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |D4 D8 D9
+.3      |1150/  1|083.15305.0001|DIODES SBR SBR15U30SP5-13 POWERD| 240803|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |D22
+.3      |1160/  1|B84.27002.0003|DISCRETE MOS NC SOT-323 3P      | 240903|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |Q3 Q4 U17
+.3      |1170/  1|B78.01NKH.0001|CHIP CAP 1 NF 50V K 0402 X7R    | 240823|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C252
+.3      |1180/  1|B78.U10KC.0001|CHIP CAP 100 NF 16V K 0402 X7R  | 241007|      |Purchased| N| Y|  0|       54.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C148 C149 C150 C158 C159 C208 C210 C211 C212 C213 C214 C215 C220
+                 |C221 C222 C228 C233 C236 C240 C243 C246 C284 C285 C286 C287 C288
+                 |C289 C290 C291 C292 C293 C294 C295 C296 C297 C298 C299 C300 C301
+                 |C303 C304 C306 C307 C308 C309 C311 C312 C313 C315 C317 C318 C319
+                 |C321 C322 
+.3      |1190/  1|B78.U10KF.0001|CHIP CAP 100NF 25V K 0402 X7R   | 240817|      |Purchased| N| Y|  0|       10.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C50 C56 C58 C62 C63 C68 C69 C86 C87 C250
+.3      |1200/  1|B78.01UK9.0002|CHIP CAP 1 UF 10V K 0402 X6S    | 240907|      |Purchased| N| Y|  0|        2.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |C170 C310
+.3      |1210/  1|B78.10UKC.0001|CHIP CAP 10 UF 16V K 0805 X6S   | 240828|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C88
+.3      |1220/  1|B78.U22KC.0001|CHIP CAP 220NF 16V K 0402 X7R   | 241007|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C209
+.3      |1230/  1|B78.4N7KH.0001|CHIP CAP 4.7 NF 50V K 0402 X7R  | 240730|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |C171
+.3      |1240/  1|B78.47NKF.0001|CHIP CAP 47 NF 25V K 0402 X7R   | 241007|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |C48 C54 C55
+.3      |1250/  1|83.00270.C70|LED BLUE LTST-S270TBKT-5A SMD (E| 241005|      |Purchased| N| Y|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |D10
+.3      |1260/  1|B48.04G03.1511|PCB 22Y015-1 TRIPOD             | 240921|      |Purchased| N| N|  0|        1.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+.3      |1280/  1|B65.010C4.0A62|CHIP RES LOW 10C 1W F 1206 TCR10| 240705|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA;EF_SA
+                 |R220 R250 R265
+.3      |1300/  1|B78.01UKF.M001|CHIP CAP 1 UF 25V K 0402 X6S    | 240801|      |Purchased| N| Y|  0|        3.0000|   0|  0|  0|          |R2_SA;HF_SA
+                 |C169 C180 PC72
+
+
