@@ -29,6 +29,12 @@ def read_html_by_name(file_name):
     except Exception as e:
         print(f"讀取檔案時發生錯誤: {e}")
 
+
+
+
+
+
+
 def main_HTMLparser():
 
     executable_dir = get_executable_path()
@@ -40,7 +46,25 @@ def main_HTMLparser():
     soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_file_name))
 
     if soup:
-        print(soup.title.string)  # 例如，印出 <title> 的內容
+        
+        # 找到所有 <table width="100%">
+        tables = soup.find_all('table', {'width': '100%'})
+
+        # 鎖定第 8 個表格 (索引從 0 開始)
+        specific_table = tables[8]
+
+        # 提取表格資料
+        data = []
+        rows = specific_table.find_all('tr')
+        for row in rows:
+            cells = row.find_all('td')
+            data.append([cell.text.strip() for cell in cells])
+
+        # 打印表格資料
+        for item in data:
+            print(item)
+ 
+        # print(soup.title.string)  # 例如，印出 <title> 的內容
 
 
     # write_list_to_file(Output_list)    
