@@ -229,7 +229,7 @@ def get_value_from_Keyfile(filepath="Key.txt"):
         print(f"讀取檔案時發生錯誤: {e}")
         return None
 
-def extract_location_texts(file_name):
+def extract_location_texts_SFCS(file_name):
 
     # 定義正則表達式模式
     pattern = r"\|\s*([\w\.]+)\s*\|([^\|]+)\|.*?\n((?:\s*\|[\w\s]+\n?)+)"
@@ -250,13 +250,15 @@ def extract_location_texts(file_name):
 
             # 將 Locations 拆分為獨立項目
             for location in locations.split():
-                results.append((item, description, location))
+                results.append((location))
+                # results.append((item, description, location))
 
         # 輸出結果
         # for item, description, location in results:
         #     print(f"Item: {item}, Description: {description}, Location Texts: {location}")
 
     return results
+
 
 
 def main():
@@ -268,7 +270,7 @@ def main():
 
     Output_list =[]
 
-    Output_list = extract_location_texts(r"B9104G10000V.txt")
+    Output_list = extract_location_texts_SFCS(r"BOM.20250228_B91.10H10.001M.txt")
     # print(Output_list)
 
 
