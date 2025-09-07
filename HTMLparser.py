@@ -49,7 +49,59 @@ def write_list_to_csv(data, file_path):
         print(f"寫入檔案時發生錯誤: {e}")
 
 
+def extract_all_component(soup, start_idx=5, end_idx=10, output_path=None, write_func=None):
+    """
+    從 soup 中擷取指定範圍的 <table width="100%"> 資料，跳過每個表格的第一行。
 
+    參數：
+        soup        : BeautifulSoup 物件
+        start_idx   : 起始表格索引（預設 5）
+        end_idx     : 結束表格索引（預設 10，包含該索引）
+        output_path : 輸出檔案路徑（可選）
+        write_func  : 寫檔函式，例如 write_list_to_file 或 write_list_to_csv（可選）
+
+    回傳：
+        data (list of list) : 擷取到的資料
+    """
+    if not soup:
+        print("⚠ soup 物件為空，無法處理")
+        return []
+
+    # 找到所有 <table width="100%">
+    tables = soup.find_all('table', attrs={'width': '100%'})
+
+    # 防呆：確保有足夠的表格
+    if len(tables) <= end_idx:
+        print(f"⚠ 找到的表格數量不足（只有 {len(tables)} 個），無法取得 table[{start_idx}] 到 table[{end_idx}]")
+        return []
+
+    data = []
+
+    for idx in range(start_idx, end_idx + 1):
+        specific_table = tables[idx]
+        rows = specific_table.find_all('tr')
+
+        for row_idx, row in enumerate(rows):
+            # 第一行直接跳過
+            if row_idx == 0:
+                continue
+
+            cells = row.find_all('td')
+            row_data = [
+                cell.get_text(separator=' ', strip=True).replace('\xa0', ' ')
+                for cell in cells
+            ]
+            data.append(row_data)
+
+    # 檢查輸出
+    for item in data:
+        print(item)
+
+    # 寫入檔案（如果有提供）
+    if output_path and write_func:
+        write_func(data, output_path)
+
+    return data
 
 def main_HTMLparser():
 
@@ -61,40 +113,14 @@ def main_HTMLparser():
     html_file_name = "1.htm"  # 替換成你的 HTML 檔案名稱
     soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_file_name))
 
-    if soup:
-    # 找到所有 <table width="100%">
-        tables = soup.find_all('table', attrs={'width': '100%'})
-
-    # 防呆：確保有足夠的表格
-        if len(tables) > 10:
-            data = []
-
-            for idx in range(5, 11):  # table[5] 到 table[10]
-                specific_table = tables[idx]
-                rows = specific_table.find_all('tr')
-
-                for row_idx, row in enumerate(rows):
-                    # 第一行直接跳過
-                    if row_idx == 0:
-                        continue
-
-                    cells = row.find_all('td')
-                    row_data = [
-                        cell.get_text(separator=' ', strip=True).replace('\xa0', ' ')
-                        for cell in cells
-                    ]
-                    data.append(row_data)
-
-            # 檢查輸出
-            for item in data:
-                print(item)
-
-            # 寫入 CSV
-            # write_list_to_csv(data, os.path.join(executable_dir, HTML_output))
-            write_list_to_file(data, os.path.join(executable_dir, HTML_output))
-
-        else:
-            print(f"⚠ 找到的表格數量不足（只有 {len(tables)} 個），無法取得 table[5] 到 table[10]")
+    output_file = os.path.join(executable_dir, HTML_output)
+    extract_all_component(
+        soup,
+        start_idx=5,
+        end_idx=10,
+        output_path=output_file,
+        write_func=write_list_to_file
+    )
 
 
     # write_list_to_file(Output_list)    
