@@ -5,6 +5,9 @@ import re
 import sys
 
 from PLMBOMProcess import extract_location_texts_PLM
+from tkinter import Tk, filedialog
+
+BOM_SFCS_output = "BOM_SFCS_output.txt"
 
 
 def get_executable_path():
@@ -268,17 +271,19 @@ def main():
     executable_dir = get_executable_path()
     print(f"執行檔所在目錄: {executable_dir}")
 
-    create_or_replace_file(os.path.join(executable_dir, "parser_result.txt"))
+    create_or_replace_file(os.path.join(executable_dir, BOM_SFCS_output))
 
     Output_list =[]
 
+    Tk().withdraw()  # 隱藏主視窗
+    filename = filedialog.askopenfilename(title="選擇檔案")
+    # print(f"你選擇的檔案是：{filename}")
+
+    Output_list = extract_location_texts_SFCS(filename)
     # Output_list = extract_location_texts_SFCS(r"BOM.20250228_B91.10H10.001M.txt")
     # print(Output_list)
 
-    Output_list = extract_location_texts_PLM(r"agile_20250828_052340650.xls")
-
-
-    write_list_to_file(Output_list)    
+    write_list_to_file(Output_list, BOM_SFCS_output)    
 
 
 if __name__ == "__main__":
