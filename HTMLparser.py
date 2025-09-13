@@ -104,6 +104,24 @@ def extract_all_component(soup, start_idx=5, end_idx=10, output_path=None, write
 
     return data
 
+
+
+def Get_comp_raw_list(soup_raw, dir_src):
+
+    output_file = os.path.join(dir_src, HTML_comp_raw_output)
+                               
+    Comp_list = []
+    Comp_list = extract_all_component(
+        soup_raw,
+        start_idx=5,
+        end_idx=10,
+        output_path=output_file,
+        write_func=write_list_to_file
+    )
+
+    return Comp_list
+
+
 def main_HTMLparser():
 
     executable_dir = get_executable_path()
@@ -111,19 +129,12 @@ def main_HTMLparser():
     create_or_replace_file(os.path.join(executable_dir, HTML_comp_raw_output))
     # Output_list =[]
 
-    
+    # html1 get 元件清單, HTML_comp_raw_output.txt
     soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_1_file_name))
+    Comp_raw_list = []
+    Comp_raw_list = Get_comp_raw_list(soup, executable_dir)
 
-    output_file = os.path.join(executable_dir, HTML_comp_raw_output)
-                               
-    Comp_raw_list =[]
-    Comp_raw_list = extract_all_component(
-        soup,
-        start_idx=5,
-        end_idx=10,
-        output_path=output_file,
-        write_func=write_list_to_file
-    )
+
 
 
     # write_list_to_file(Output_list)    
