@@ -7,8 +7,9 @@ from bs4 import BeautifulSoup
 from Instance import *
 import csv
 
-HTML_output = "HTML_output.txt"
+HTML_comp_raw_output = "HTML_comp_raw_output.txt"
 
+html_1_file_name = "1.htm"  # 替換成你的 HTML 檔案名稱
 
 def read_html_by_name(file_name):
     """
@@ -107,14 +108,16 @@ def main_HTMLparser():
 
     executable_dir = get_executable_path()
     print(f"執行檔所在目錄: {executable_dir}")
-    create_or_replace_file(os.path.join(executable_dir, HTML_output))
+    create_or_replace_file(os.path.join(executable_dir, HTML_comp_raw_output))
     # Output_list =[]
 
-    html_file_name = "1.htm"  # 替換成你的 HTML 檔案名稱
-    soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_file_name))
+    
+    soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_1_file_name))
 
-    output_file = os.path.join(executable_dir, HTML_output)
-    extract_all_component(
+    output_file = os.path.join(executable_dir, HTML_comp_raw_output)
+                               
+    Comp_raw_list =[]
+    Comp_raw_list = extract_all_component(
         soup,
         start_idx=5,
         end_idx=10,
