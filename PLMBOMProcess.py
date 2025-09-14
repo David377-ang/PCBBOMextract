@@ -142,7 +142,7 @@ def extract_location_texts_PLM(file_name):
     # print(result_dict["BOM.Location"])  # 只看 BOM.Location 欄
 
     locations = split_locations(result_dict["BOM.Location"])
-    print(locations)
+    # print(locations)
 
 
     return locations

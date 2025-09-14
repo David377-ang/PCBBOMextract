@@ -8,6 +8,8 @@ from Instance import *
 import csv
 
 HTML_comp_raw_output = "HTML_comp_raw_output.txt"
+comp_testability_output = "comp_testability_output.txt"
+
 
 html_1_file_name = "1.htm"  # 替換成你的 HTML 檔案名稱
 
@@ -121,12 +123,48 @@ def Get_comp_raw_list(soup_raw, dir_src):
 
     return Comp_list
 
+def evaluate_testability(Comp_raw_list_src, BOM_Comp_list_src):
+    """
+    根據 BOM 清單比對 HTML 元件資料，判斷每個元件是否可測試，
+    並回傳格式為 [元件編號, 腳數, 不可植針腳數, 測試狀態]
+
+    Comp_raw_list 的欄位定義：
+        item[0] = 元件編號
+        item[3] = 腳數 (Pin Count)
+        item[4] = 不可植針腳數 (Unpluggable Pin Count)
+        item[5] = 測試百分比 (Test Coverage)
+    """
+    results = []
+
+    for bom_part in BOM_Comp_list_src:
+        match = next((item for item in Comp_raw_list_src if item[0] == bom_part), None)
+
+        if match:
+            percent = match[5].strip()
+            if percent == "100.0%":
+                status = "testable"
+            elif percent == "0%":
+                status = "untestable"
+            else:
+                status = "limit testable"
+            pin_count = match[3]
+            unpluggable_pins = match[4]
+        else:
+            status = "not found"
+            pin_count = "-"
+            unpluggable_pins = "-"
+
+        results.append([bom_part, pin_count, unpluggable_pins, status])
+
+    return results
+
 
 def main_HTMLparser():
 
     executable_dir = get_executable_path()
     print(f"執行檔所在目錄: {executable_dir}")
     create_or_replace_file(os.path.join(executable_dir, HTML_comp_raw_output))
+    create_or_replace_file(os.path.join(executable_dir, comp_testability_output))
     # Output_list =[]
 
     # html1 get 元件清單, HTML_comp_raw_output.txt
@@ -134,7 +172,16 @@ def main_HTMLparser():
     Comp_raw_list = []
     Comp_raw_list = Get_comp_raw_list(soup, executable_dir)
 
+    # get BOM 元件清單
+    BOM_Comp_list = []
+    BOM_Comp_list = extract_location_texts_SFCS(r"BOM.20241007_B91.04G10.000V.txt")
 
+
+    # 判斷 BOM 元件可測度 , comp_testability_output.txt
+    Comp_testability_list = []
+    Comp_testability_list = evaluate_testability(Comp_raw_list, BOM_Comp_list)
+
+    write_list_to_file(Comp_testability_list, comp_testability_output) 
 
 
     # write_list_to_file(Output_list)    
