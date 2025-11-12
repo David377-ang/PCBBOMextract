@@ -8,7 +8,7 @@ from PLMBOMProcess import extract_location_texts_PLM
 from tkinter import Tk, filedialog
 
 BOM_SFCS_output = "BOM_SFCS_output.txt"
-
+testcoverage_output = "testcoverage_output.txt"
 
 def get_executable_path():
     if getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS'):
@@ -266,12 +266,44 @@ def extract_location_texts_SFCS(file_name):
     return results
 
 
+def extract_location_texts_testcoverage(file_name):
+
+    # 定義正則表達式模式
+    pattern = r"\|\s*([\w\.]+)\s*\|([^\|]+)\|.*?\n((?:\s*\|[\w\s]+\n?)+)"
+
+    # 初始化空列表存儲結果
+    results = []
+
+    # 打開並讀取檔案
+    with open(file_name, "r", encoding="utf-8") as file:
+        content = file.read()
+        # 匹配所有模式
+        matches = re.finditer(pattern, content)
+        for match in matches:
+            item = match.group(1).strip()  # 提取 Item
+            description = match.group(2).strip()  # 提取 Description
+            locations = match.group(3).replace("\n", " ").replace("|", "").strip()  # 合併多行
+            locations = re.sub(r"\s{2,}", " ", locations)  # 消除多餘空格
+
+            # 將 Locations 拆分為獨立項目
+            for location in locations.split():
+                # results.append((location))
+                results.append((location, item, description))
+
+        # 輸出結果
+        # for item, description, location in results:
+        #     print(f"Item: {item}, Description: {description}, Location Texts: {location}")
+
+    return results
+
+
 def main():
 
     executable_dir = get_executable_path()
     print(f"執行檔所在目錄: {executable_dir}")
 
     create_or_replace_file(os.path.join(executable_dir, BOM_SFCS_output))
+    create_or_replace_file(os.path.join(executable_dir, testcoverage_output))
 
     Output_list =[]
 
@@ -284,6 +316,10 @@ def main():
     # print(Output_list)
 
     write_list_to_file(Output_list, BOM_SFCS_output)    
+
+
+    Output_list = extract_location_texts_testcoverage(filename)
+    write_list_to_file(Output_list, testcoverage_output)   
 
 
 if __name__ == "__main__":
