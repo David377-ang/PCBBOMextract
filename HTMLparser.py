@@ -11,7 +11,14 @@ HTML_comp_raw_output = "HTML_comp_raw_output.txt"
 comp_testability_output = "comp_testability_output.txt"
 
 
+# 人工確認
 html_1_file_name = "1.htm"  # 替換成你的 HTML 檔案名稱
+html_path_name = "VF"
+
+BOM_file_name = "BOM.20241007_B91.04G10.000V.txt"
+
+
+
 
 def read_html_by_name(file_name):
     """
@@ -168,13 +175,13 @@ def main_HTMLparser():
     # Output_list =[]
 
     # html1 get 元件清單, HTML_comp_raw_output.txt
-    soup = read_html_by_name(os.path.join(executable_dir, r"VF", html_1_file_name))
+    soup = read_html_by_name(os.path.join(executable_dir, html_path_name, html_1_file_name))
     Comp_raw_list = []
     Comp_raw_list = Get_comp_raw_list(soup, executable_dir)
 
     # get BOM 元件清單
     BOM_Comp_list = []
-    BOM_Comp_list = extract_location_texts_SFCS(r"BOM.20241007_B91.04G10.000V.txt")
+    BOM_Comp_list = extract_location_texts_SFCS(BOM_file_name)
 
 
     # 判斷 BOM 元件可測度 , comp_testability_output.txt
