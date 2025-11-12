@@ -3,6 +3,7 @@ import os
 from os.path import join, exists
 import re
 import sys
+import csv
 
 from PLMBOMProcess import extract_location_texts_PLM
 from tkinter import Tk, filedialog
@@ -297,6 +298,23 @@ def extract_location_texts_testcoverage(file_name):
     return results
 
 
+def write_list_to_csv(data_list, filename="parser_result.csv"):
+    """
+    將列表的內容寫入 CSV 檔案（以逗號分隔）。如果檔案已存在，則會覆蓋原有內容。
+
+    Args:
+        data_list: 要寫入的列表，每個元素應為 tuple。
+        filename: 要寫入的檔案名稱，預設為 "parser_result.csv"。
+    """
+    try:
+        with open(filename, "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            # writer.writerow(["Part Number", "Description", "Reference Designator"])  # 表頭
+            writer.writerows(data_list)
+        print(f"已將列表內容寫入 CSV 檔案: {filename}")
+    except Exception as e:
+        print(f"寫入 CSV 檔案時發生錯誤: {e}")
+
 def main():
 
     executable_dir = get_executable_path()
@@ -319,7 +337,7 @@ def main():
 
 
     Output_list = extract_location_texts_testcoverage(filename)
-    write_list_to_file(Output_list, testcoverage_output)   
+    write_list_to_csv(Output_list, testcoverage_output)   
 
 
 if __name__ == "__main__":
