@@ -1,0 +1,100 @@
+       Bojay Difference Report For Nails       Time 2024/7/30 16:34       Unit:Inch
+
+========================================================================================================
+Summary :(The Comparison base Version is F13680-23W11-1A)
+Old Version :F13680-23W11-1A
+New Version :23W11-1
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+[Part 1]    Shift Nails                           TOP Side  = 0
+                                               Bottom Side  = 6
+************************Modfiy List**********************************
+TOP Side	   --None--
+BOT Side	   Will Be Broken  = 6    ; Can Be Socket	= 0 
+*********************************************************************
+--------------------------------------------------------------------------------------------------------
+[Part 2]    Del Nails                             TOP Side  = 2
+                                               Bottom Side  = 3
+--------------------------------------------------------------------------------------------------------
+[Part 3]    Add Nails                             TOP Side  = 0
+                                               Bottom Side  = 2
+************************Modfiy List**********************************
+TOP Side	   --None--
+BOT Side	   Will Be Broken  = 2    ; Can Be Socket	= 0 
+*********************************************************************
+--------------------------------------------------------------------------------------------------------
+[Part 4]    T/B Side Change(Same XY) Nails        --None--
+
+--------------------------------------------------------------------------------------------------------
+[Part 5]    Diff NetName(Same XY) Nails           TOP Side  = 3
+                                               Bottom Side  = 4
+Detail information as follows:
+--------------------------------------------------------------------------------------------------------
+[Part 1] Shift Nails
+Following xy location(>3MIL) of test point be shifted between two version
+F13680-23W11-1A                    $86       1.5714    5.5667   3  1B   (B)  #3046 PECI_BMC_R       T PIN TB_TP933.1
+23W11-1                            $86       1.5853    5.5346   3  AA   (B)  #3075 PECI_BMC_R       T PIN TB_TP937.1
+Distance = 0.035	[will be broken interfere with original $87]
+
+F13680-23W11-1A                    $101      1.8850    5.4350   1  1B   (B)  #3717 SMB_BIC_CPLD_SCL T PIN TB_TP686.1
+23W11-1                            $101      1.9944    5.3940   3  AA   (B)  #3735 SMB_BIC_CPLD_SCL T PIN TB_TP690.1
+Distance = 0.117	[will be broken interfere with original $100]
+
+F13680-23W11-1A                    $584      3.1551    5.9759   2  2B   (B)  #182  I3C_CPU_APML_R2_SCL T PIN TB_TP60.1
+23W11-1                            $584      3.1551    5.9459   2  AA   (B)  #205  I3C_CPU_APML_R2_SCL T PIN TB_TP66.1
+Distance = 0.030	[will be broken interfere with original $584]
+
+F13680-23W11-1A                    $585      3.2682    5.9759   3  2B   (B)  #183  I3C_CPU_APML_R2_SDA T PIN TB_TP59.1
+23W11-1                            $585      3.2682    5.9459   3  AA   (B)  #206  I3C_CPU_APML_R2_SDA T PIN TB_TP65.1
+Distance = 0.030	[will be broken interfere with original $585]
+
+F13680-23W11-1A                    $588      3.2682    6.1689   3  2B   (B)  #188  I3C_CPU_APML_LS_R_SDA T PIN TB_TP63.1
+23W11-1                            $588      3.2682    6.1789   3  AA   (B)  #211  I3C_CPU_APML_LS_R_SDA T PIN TB_TP69.1
+Distance = 0.010	[will be broken interfere with original $588]
+
+F13680-23W11-1A                    $589      3.1540    6.1689   3  2B   (B)  #185  I3C_CPU_APML_LS_R_SCL T PIN TB_TP64.1
+23W11-1                            $589      3.1540    6.1789   3  AA   (B)  #208  I3C_CPU_APML_LS_R_SCL T PIN TB_TP70.1
+Distance = 0.010	[will be broken interfere with original $589]
+
+
+[Part 2] Del Nails
+Following are in F13680-23W11-1A Version, but not found in 23W11-1 Version
+$87       1.5576    5.5186   3  1B   (B)  #3040 I3C_CPU_APML_R_SCL T PIN TB_TP1171.1
+$88       1.6345    5.4985   1  1B   (B)  #3039 I3C_CPU_APML_R_SDA T PIN TB_TP1170.1
+$1026    11.0450    8.7975   3  6A   (B)  #3013 PWRGD_HSC_SLOT_BIC T PIN TB_TP193.1
+$1605    10.8850    8.6550   1  6A   (T)  #3179 PWRGD_HSC_SLOT_BIC_R T PIN TB_TP57.1
+$1606    11.1393    8.8331   2  6A   (T)  #3177 BUF1_EN          T PIN TB_TP65.1
+
+[Part 3] Add Nails
+Following are in 23W11-1 Version, but not found in F13680-23W11-1A Version
+$10001    1.6371    5.4704   3  AA   (B)  #3068 I3C_CPU_APML_R1_SDA T PIN TB_TP5.1	[will be broken interfere with original $88]
+$10002    1.5725    5.4882   3  AA   (B)  #3069 I3C_CPU_APML_R1_SCL T PIN TB_TP6.1	[will be broken interfere with original $87]
+
+[Part 4] T/B Side Change(Same XY) Nails
+Following are same xy location , but side is different between two version
+--None--
+
+[Part 5] Diff NetName(Same XY) Nails
+Following are same xy location , but net name is different between two version
+F13680-23W11-1A                    $12       1.1288    8.6494   3  1A   (B)  #3934 E1S_0_LED_N      T PIN TB_TP1464.1
+23W11-1                            $12       1.1288    8.6494   3  AA   (B)  #3948 E1S_0_LED        T PIN TB_TP4.1
+
+F13680-23W11-1A                    $77       1.3721    5.8971   3  1B   (B)  #3058 BIC_SECUREBOOT   T PIN TB_TP1538.1
+23W11-1                            $77       1.3721    5.8971   3  AA   (B)  #3088 RTM_TYPE_1       T PIN TB_TP62.1
+
+F13680-23W11-1A                    $400      0.9055    0.1969   2  1D   (B)  #5085 NC_5084            PIN CN6.10
+23W11-1                            $400      0.9055    0.1969   2  AA   (B)  #5096 NC_5095            PIN CN6.10
+
+F13680-23W11-1A                    $1111    12.3445    8.3169   1  6A   (B)  #2162 AC_ON_OFF_BTN_R    PIN CN8.E4
+23W11-1                            $1111    12.3445    8.3169   1  AA   (B)  #2200 FM_BMC_RST_RTCRST_R   PIN CN8.E4
+
+F13680-23W11-1A                    $1366     1.1830    1.6620   2  1D   (T)  #3932 E1S_1_LED_N      T PIN TB_TP1460.1
+23W11-1                            $1366     1.1830    1.6620   2  AA   (T)  #3946 E1S_1_LED        T PIN TB_TP2.1
+
+F13680-23W11-1A                    $1424     2.1510    3.8800   3  2C   (T)  #3688 E1S_0_LED_R_N    T PIN TB_TP1463.1
+23W11-1                            $1424     2.1510    3.8800   3  AA   (T)  #3707 E1S_0_LED_R      T PIN TB_TP3.1
+
+F13680-23W11-1A                    $1428     2.2700    3.9050   3  2C   (T)  #3687 E1S_1_LED_R_N    T PIN TB_TP1459.1
+23W11-1                            $1428     2.2700    3.9050   3  AA   (T)  #3706 E1S_1_LED_R      T PIN TB_TP1.1
+
+

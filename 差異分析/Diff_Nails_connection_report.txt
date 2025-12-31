@@ -1,0 +1,65 @@
+       Bojay Difference Report for Nails Connection       Time 2024/7/30 16:34       Unit:Inch
+
+Old Version :F13680-23W11-1A
+New Version :23W11-1
+[Part 1] NEW Version Shift can be socket Nails Connection:
+--None--
+[Part 2] NEW Version Shift will be broken Nails Connection:
+$86--->PECI_BMC_R---> U13.H14, R262.1
+
+$101--->SMB_BIC_CPLD_SCL---> U14.E12, R961.2, R967.2
+
+$584--->I3C_CPU_APML_R2_SCL---> U78.1, R1905.2, R1817.2, R1816.2
+
+$585--->I3C_CPU_APML_R2_SDA---> U78.8, R1906.2, R1818.2, R1815.2
+
+$588--->I3C_CPU_APML_LS_R_SDA---> U78.5, R1819.1, R17.1
+
+$589--->I3C_CPU_APML_LS_R_SCL---> U78.4, R1820.1, R20.1
+
+
+[Part 3] NEW Version ADD can be socket Nails Connection:
+--None--
+[Part 4] NEW Version ADD will be broken Nails Connection:
+$10001--->I3C_CPU_APML_R1_SDA---> U13.K15, R273.1
+
+$10002--->I3C_CPU_APML_R1_SCL---> U13.K14, R272.1
+
+
+[Part 5] Same XY But Diff Netname Connection:
+Old Version :$12--->E1S_0_LED_N---> R472.2, R473.1, R395.1, CN3.A10
+
+New Version :$12--->E1S_0_LED---> R472.2, R473.1, R395.1, CN3.A10
+
+
+Old Version :$77--->BIC_SECUREBOOT---> U13.E11, R320.2, R314.1
+
+New Version :$77--->RTM_TYPE_1---> U13.E11, R320.1, R314.2
+
+
+Old Version :$400--->NC_5084---> CN6.10
+
+New Version :$400--->NC_5095---> CN6.10
+
+
+Old Version :$1111--->AC_ON_OFF_BTN_R---> CN8.E4, R833.2, C289.1
+
+New Version :$1111--->FM_BMC_RST_RTCRST_R---> CN8.E4, R834.1
+
+
+Old Version :$1366--->E1S_1_LED_N---> R494.2, R495.1, R398.1, CN4.A10
+
+New Version :$1366--->E1S_1_LED---> R494.2, R495.1, R398.1, CN4.A10
+
+
+Old Version :$1424--->E1S_0_LED_R_N---> U14.K17, R395.2
+
+New Version :$1424--->E1S_0_LED_R---> U14.K17, R395.2
+
+
+Old Version :$1428--->E1S_1_LED_R_N---> U14.K18, R398.2
+
+New Version :$1428--->E1S_1_LED_R---> U14.K18, R398.2
+
+
+

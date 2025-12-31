@@ -1,0 +1,530 @@
+       Bojay Difference Report For Pins       Time 2024/7/30 16:34       Unit:Inch
+
+Old Version :F13680-23W11-1A
+New Version :23W11-1
+
+[Part 1]Exist in both file ( F13680-23W11-1A To 23W11-1 )
+
+Version No.        Part            T/B
+Pin      Name       X        Y       Layer   Net                    Nail(s)
+F13680-23W11-1A                    Part R17    (B)
+   1    1    3.2599    6.1339     2    PVDD11_S3         651
+
+23W11-1                            Part R17    (B)
+   1    1    3.2312    6.1389     2    I3C_CPU_APML_LS_R_SDA  588
+
+
+F13680-23W11-1A                    Part R17    (B)
+   2    2    3.2275    6.1339     2    I3C_CPU_APML_LS_R_SDA  588
+
+23W11-1                            Part R17    (B)
+   2    2    3.2672    6.1389     2    PVDD11_S3         651
+
+
+F13680-23W11-1A                    Part R20    (B)
+   1    1    3.1645    6.1339     2    PVDD11_S3         651
+
+23W11-1                            Part R20    (B)
+   1    1    3.1932    6.1389     2    I3C_CPU_APML_LS_R_SCL  589
+
+
+F13680-23W11-1A                    Part R20    (B)
+   2    2    3.1970    6.1339     2    I3C_CPU_APML_LS_R_SCL  589
+
+23W11-1                            Part R20    (B)
+   2    2    3.1572    6.1389     2    PVDD11_S3         651
+
+
+F13680-23W11-1A                    Part R162   (T)
+   2    2    4.2515    8.5478     1    HDT_HDR_R_TCK     1745
+
+23W11-1                            Part R162   (T)
+   2    2    4.2515    8.5478     1    HDT_HDR_R_TCK     
+
+
+F13680-23W11-1A                    Part R164   (T)
+   2    2    4.2210    8.4270     1    HDT_HDR_R_TDI     1747
+
+23W11-1                            Part R164   (T)
+   2    2    4.2210    8.4270     1    HDT_HDR_R_TDI     
+
+
+F13680-23W11-1A                    Part R166   (T)
+   2    2    4.2280    8.2040     1    HDT_HDR_DBREQ_R_N  1752
+
+23W11-1                            Part R166   (T)
+   2    2    4.2280    8.2040     1    HDT_HDR_DBREQ_R_N  
+
+
+F13680-23W11-1A                    Part R168   (T)
+   2    2    3.8120    8.3100     1    HDT_HDR_TRST_N_R  1740
+
+23W11-1                            Part R168   (T)
+   2    2    3.8120    8.3100     1    HDT_HDR_TRST_N_R  
+
+
+F13680-23W11-1A                    Part R169   (T)
+   2    2    3.8120    8.4800     1    HDT_PRSENT_R_N    1743
+
+23W11-1                            Part R169   (T)
+   2    2    3.8120    8.4800     1    HDT_PRSENT_R_N    
+
+
+F13680-23W11-1A                    Part R170   (T)
+   1    1    4.2945    8.5458     1    HDT_HDR_R_TCK     1745
+
+23W11-1                            Part R170   (T)
+   1    1    4.2945    8.5458     1    HDT_HDR_R_TCK     
+
+
+F13680-23W11-1A                    Part R172   (T)
+   1    1    4.2620    8.4270     1    HDT_HDR_R_TDI     1747
+
+23W11-1                            Part R172   (T)
+   1    1    4.2620    8.4270     1    HDT_HDR_R_TDI     
+
+
+F13680-23W11-1A                    Part R173   (T)
+   2    2    3.8120    8.2650     1    HDT_HDR_TRST_N_R  1740
+
+23W11-1                            Part R173   (T)
+   2    2    3.8120    8.2650     1    HDT_HDR_TRST_N_R  
+
+
+F13680-23W11-1A                    Part R177   (T)
+   1    1    4.2730    8.2040     1    HDT_HDR_DBREQ_R_N  1752
+
+23W11-1                            Part R177   (T)
+   1    1    4.2730    8.2040     1    HDT_HDR_DBREQ_R_N  
+
+
+F13680-23W11-1A                    Part R178   (T)
+   1    1    4.2950    8.1270     1    HDT_CONN_TESTEN_R  1753
+
+23W11-1                            Part R178   (T)
+   1    1    4.2950    8.1270     1    HDT_CONN_TESTEN_R  
+
+
+F13680-23W11-1A                    Part R179   (T)
+   1    1    4.2500    8.1270     1    HDT_CONN_TESTEN_R  1753
+
+23W11-1                            Part R179   (T)
+   1    1    4.2500    8.1270     1    HDT_CONN_TESTEN_R  
+
+
+F13680-23W11-1A                    Part R272   (B)
+   1    1    1.7475    5.5270     2    I3C_CPU_APML_SCL  582
+
+23W11-1                            Part R272   (B)
+   1    1    1.7115    5.5270     2    I3C_CPU_APML_R1_SCL  10002
+
+
+F13680-23W11-1A                    Part R272   (B)
+   2    2    1.7115    5.5270     2    I3C_CPU_APML_R_SCL  87
+
+23W11-1                            Part R272   (B)
+   2    2    1.7475    5.5270     2    I3C_CPU_APML_SCL  582
+
+
+F13680-23W11-1A                    Part R273   (B)
+   1    1    1.7475    5.4870     2    I3C_CPU_APML_SDA  583
+
+23W11-1                            Part R273   (B)
+   1    1    1.7115    5.4870     2    I3C_CPU_APML_R1_SDA  10001
+
+
+F13680-23W11-1A                    Part R273   (B)
+   2    2    1.7115    5.4870     2    I3C_CPU_APML_R_SDA  88
+
+23W11-1                            Part R273   (B)
+   2    2    1.7475    5.4870     2    I3C_CPU_APML_SDA  583
+
+
+F13680-23W11-1A                    Part R314   (B)
+   1    1    1.3900    5.9480     2    BIC_SECUREBOOT    77
+
+23W11-1                            Part R314   (B)
+   1    1    1.3900    5.9820     2    P3V3_STBY         816
+
+
+F13680-23W11-1A                    Part R314   (B)
+   2    2    1.3900    5.9820     2    P3V3_STBY         816
+
+23W11-1                            Part R314   (B)
+   2    2    1.3900    5.9480     2    RTM_TYPE_1        77
+
+
+F13680-23W11-1A                    Part R320   (B)
+   1    1    1.3900    6.1420     2    GND               933
+
+23W11-1                            Part R320   (B)
+   1    1    1.3900    6.1080     2    RTM_TYPE_1        77
+
+
+F13680-23W11-1A                    Part R320   (B)
+   2    2    1.3900    6.1080     2    BIC_SECUREBOOT    77
+
+23W11-1                            Part R320   (B)
+   2    2    1.3900    6.1420     2    GND               10
+
+
+F13680-23W11-1A                    Part R833   (T)
+   2    2   11.9670    8.4800     1    AC_ON_OFF_BTN_R   1111
+
+23W11-1                            Part R833   (T)
+   2    2   11.9670    8.4800     1    AC_ON_OFF_BTN_R   
+
+
+F13680-23W11-1A                    Part R1811  (B)
+   1    1    1.5250    5.8270     2    P3V3_STBY         816
+
+23W11-1                            Part R1811  (B)
+   1    1    1.5250    5.7930     2    BIC_SECUREBOOT    
+
+
+F13680-23W11-1A                    Part R1811  (B)
+   2    2    1.5250    5.7930     2    RTM_TYPE_1        
+
+23W11-1                            Part R1811  (B)
+   2    2    1.5250    5.8270     2    P3V3_STBY         816
+
+
+F13680-23W11-1A                    Part R1813  (B)
+   1    1    1.5870    5.7950     2    RTM_TYPE_1        
+
+23W11-1                            Part R1813  (B)
+   1    1    1.6230    5.7950     2    GND               10
+
+
+F13680-23W11-1A                    Part R1813  (B)
+   2    2    1.6230    5.7950     2    GND               933
+
+23W11-1                            Part R1813  (B)
+   2    2    1.5870    5.7950     2    BIC_SECUREBOOT    
+
+
+F13680-23W11-1A                    Part R1851  (T)
+   2    2   12.1720    3.2150     1    JTAG_RTM_R_TCK    1757
+
+23W11-1                            Part R1851  (T)
+   2    2   12.1720    3.2150     1    JTAG_RTM_R_TCK    
+
+
+F13680-23W11-1A                    Part R1852  (T)
+   2    2   12.1720    3.1250     1    JTAG_RTM_R_TDI    1756
+
+23W11-1                            Part R1852  (T)
+   2    2   12.1720    3.1250     1    JTAG_RTM_R_TDI    
+
+
+F13680-23W11-1A                    Part R1853  (T)
+   2    2   12.1720    2.9900     1    JTAG_RTM_TRST_R_N  1755
+
+23W11-1                            Part R1853  (T)
+   2    2   12.1720    2.9900     1    JTAG_RTM_TRST_R_N  
+
+
+F13680-23W11-1A                    Part R1884  (B)
+   1    1   10.2730    7.7500     2    RTM_EE_CLK        1007
+
+23W11-1                            Part R1884  (B)
+   1    1   10.2370    7.7500     2    RTM_MUX_EE_R_CLK  755
+
+
+F13680-23W11-1A                    Part R1884  (B)
+   2    2   10.2370    7.7500     2    RTM_MUX_EE_R_CLK  755
+
+23W11-1                            Part R1884  (B)
+   2    2   10.2730    7.7500     2    RTM_EE_CLK        1007
+
+
+F13680-23W11-1A                    Part C289   (T)
+   1    1   11.9680    8.4400     1    AC_ON_OFF_BTN_R   1111
+
+23W11-1                            Part C289   (T)
+   1    1   11.9680    8.4400     1    AC_ON_OFF_BTN_R   
+
+
+F13680-23W11-1A                    Part C1294  (B)
+   1    1    3.2752    6.0584     2    P1V8_STBY         1037
+
+23W11-1                            Part C1294  (B)
+   1    1    3.2752    6.0584     2    I3C_LS_VCCB       
+
+
+F13680-23W11-1A                    Part U13    (T)
+  63  D15    1.4815    5.6745     1    PWRGD_HSC_SLOT_BIC  1026
+
+23W11-1                            Part U13    (T)
+  63  D15    1.4815    5.6745     1    NC_4970           
+
+
+F13680-23W11-1A                    Part U13    (T)
+ 158  K14    1.4500    5.4855     1    I3C_CPU_APML_R_SCL  87
+
+23W11-1                            Part U13    (T)
+ 158  K14    1.4500    5.4855     1    I3C_CPU_APML_R1_SCL  10002
+
+
+F13680-23W11-1A                    Part U13    (T)
+ 159  K15    1.4815    5.4855     1    I3C_CPU_APML_R_SDA  88
+
+23W11-1                            Part U13    (T)
+ 159  K15    1.4815    5.4855     1    I3C_CPU_APML_R1_SDA  10001
+
+
+F13680-23W11-1A                    Part U64    (T)
+   8    8    2.7696    5.7840     1    P3V3_STBY         816
+
+23W11-1                            Part U64    (T)
+   8    8    2.7696    5.7840     1    GND               10
+
+
+F13680-23W11-1A                    Part U78    (B)
+   7    7    3.2244    6.0655     2    P1V8_STBY         1037
+
+23W11-1                            Part U78    (B)
+   7    7    3.2244    6.0655     2    I3C_LS_VCCB       
+
+
+F13680-23W11-1A                    Part CN1    (T)
+   2    2    4.1087    8.5557     1    HDT_HDR_R_TCK     1745
+
+23W11-1                            Part CN1    (T)
+   2    2    4.1087    8.5557     1    HDT_HDR_R_TCK     
+
+
+F13680-23W11-1A                    Part CN1    (T)
+   3    3    3.9228    8.5057     1    HDT_PRSENT_R_N    1743
+
+23W11-1                            Part CN1    (T)
+   3    3    3.9228    8.5057     1    HDT_PRSENT_R_N    
+
+
+F13680-23W11-1A                    Part CN1    (T)
+   6    6    4.1087    8.4557     1    HDT_HDR_R_TDI     1747
+
+23W11-1                            Part CN1    (T)
+   6    6    4.1087    8.4557     1    HDT_HDR_R_TDI     
+
+
+F13680-23W11-1A                    Part CN1    (T)
+   9    9    3.9228    8.3557     1    HDT_HDR_TRST_N_R  1740
+
+23W11-1                            Part CN1    (T)
+   9    9    3.9228    8.3557     1    HDT_HDR_TRST_N_R  
+
+
+F13680-23W11-1A                    Part CN1    (T)
+  14   14    4.1087    8.2557     1    NC_5104           1751
+
+23W11-1                            Part CN1    (T)
+  14   14    4.1087    8.2557     1    NC_5115           
+
+
+F13680-23W11-1A                    Part CN1    (T)
+  16   16    4.1087    8.2057     1    HDT_HDR_DBREQ_R_N  1752
+
+23W11-1                            Part CN1    (T)
+  16   16    4.1087    8.2057     1    HDT_HDR_DBREQ_R_N  
+
+
+F13680-23W11-1A                    Part CN1    (T)
+  18   18    4.1087    8.1557     1    HDT_CONN_TESTEN_R  1753
+
+23W11-1                            Part CN1    (T)
+  18   18    4.1087    8.1557     1    HDT_CONN_TESTEN_R  
+
+
+F13680-23W11-1A                    Part CN1    (T)
+  20   20    4.1087    8.1057     1    NC_5105           1754
+
+23W11-1                            Part CN1    (T)
+  20   20    4.1087    8.1057     1    NC_5116           
+
+
+F13680-23W11-1A                    Part CN8    (T)
+   1   A1   12.5413    8.5532     0    SMB_BIC_BMC_RPT_SCL  1027
+
+23W11-1                            Part CN8    (T)
+   1   A1   12.5413    8.5532     0    AC_ON_OFF_BTN_R   
+
+
+F13680-23W11-1A                    Part CN8    (T)
+   3   A3   12.5413    8.3957     0    SMB_BIC_BMC_RPT_SDA  1024
+
+23W11-1                            Part CN8    (T)
+   3   A3   12.5413    8.3957     0    SMB_BMC_SLOT_ALT_N_R  1618
+
+
+F13680-23W11-1A                    Part CN8    (T)
+   6   B2   12.4862    8.4744     0    FM_UART_REQ_SLOT1_R_N  1624
+
+23W11-1                            Part CN8    (T)
+   6   B2   12.4862    8.4744     0    SMB_BIC_BMC_RPT_SDA  1024
+
+
+F13680-23W11-1A                    Part CN8    (T)
+   8   B4   12.4862    8.3169     0    SMB_BMC_SLOT_ALT_N_R  1618
+
+23W11-1                            Part CN8    (T)
+   8   B4   12.4862    8.3169     0    PWRGD_SB_STBY_PWROK  969
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  10   C2   12.4390    8.4744     0    FM_BMC_RST_RTCRST_R  1619
+
+23W11-1                            Part CN8    (T)
+  10   C2   12.4390    8.4744     0    SMB_BIC_BMC_RPT_SCL  1027
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  18   E2   12.3445    8.4744     0    PWRBTN_R_N        1622
+
+23W11-1                            Part CN8    (T)
+  18   E2   12.3445    8.4744     0    I3C_BIC_BMC_SDA   21
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  20   E4   12.3445    8.3169     0    AC_ON_OFF_BTN_R   1111
+
+23W11-1                            Part CN8    (T)
+  20   E4   12.3445    8.3169     0    FM_BMC_RST_RTCRST_R  1619
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  22   F2   12.2973    8.4744     0    PWRGD_SB_STBY_PWROK  969
+
+23W11-1                            Part CN8    (T)
+  22   F2   12.2973    8.4744     0    I3C_BIC_BMC_SCL   20
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  30   H2   12.2028    8.4744     0    I3C_BIC_BMC_SCL   20
+
+23W11-1                            Part CN8    (T)
+  30   H2   12.2028    8.4744     0    PWRBTN_R_N        1622
+
+
+F13680-23W11-1A                    Part CN8    (T)
+  32   H4   12.2028    8.3169     0    I3C_BIC_BMC_SDA   21
+
+23W11-1                            Part CN8    (T)
+  32   H4   12.2028    8.3169     0    FM_UART_REQ_SLOT1_R_N  1624
+
+
+F13680-23W11-1A                    Part JCN1   (T)
+   3    3   12.3081    3.1602     1    JTAG_RTM_R_TCK    1757
+
+23W11-1                            Part JCN1   (T)
+   3    3   12.3081    3.1602     1    JTAG_RTM_R_TCK    
+
+
+F13680-23W11-1A                    Part JCN1   (T)
+   5    5   12.3081    3.0602     1    JTAG_RTM_R_TDI    1756
+
+23W11-1                            Part JCN1   (T)
+   5    5   12.3081    3.0602     1    JTAG_RTM_R_TDI    
+
+
+F13680-23W11-1A                    Part JCN1   (T)
+   7    7   12.3081    2.9602     1    JTAG_RTM_TRST_R_N  1755
+
+23W11-1                            Part JCN1   (T)
+   7    7   12.3081    2.9602     1    JTAG_RTM_TRST_R_N  
+
+
+F13680-23W11-1A                    Part JCN1   (T)
+   8    8   12.5148    2.9602     1    NC_4951           1759
+
+23W11-1                            Part JCN1   (T)
+   8    8   12.5148    2.9602     1    NC_4961           
+
+
+F13680-23W11-1A                    Part JCN5   (T)
+   1    1    0.2051    8.0523     1    BIC_FWSPICK       46
+
+23W11-1                            Part JCN5   (T)
+   1    1    0.1183    8.2193     1    BIC_FWSPICK_R     1123
+
+
+F13680-23W11-1A                    Part JCN5   (T)
+   2    2    0.1051    8.1603     1    BIC_FWSPICK_R     1123
+
+23W11-1                            Part JCN5   (T)
+   2    2    0.2365    8.1193     1    BIC_FWSPICK       46
+
+
+F13680-23W11-1A                    Part JCN6   (T)
+   7    7    0.1151    8.3752     1    NC_5082           1704
+
+23W11-1                            Part JCN6   (T)
+   7    7    0.1151    8.3752     1    NC_5091           
+
+
+F13680-23W11-1A                    Part JCN6   (T)
+   9    9    0.1151    8.3252     1    NC_5083           1705
+
+23W11-1                            Part JCN6   (T)
+   9    9    0.1151    8.3252     1    NC_5092           
+
+
+
+[Part 2]Exit only in F13680-23W11-1A
+
+Part            T/B
+Pin      Name       X        Y       Layer   Net                    Nail(s)
+Part R1809  (T)
+   1    1   10.9250    8.7280     1    PWRGD_HSC_SLOT_BIC_R  1605
+   2    2   10.9250    8.7620     1    PWRGD_HSC_SLOT_BIC  1026
+
+Part R1810  (T)
+   1    1   11.0900    8.8370     1    BUF1_EN           1606
+   2    2   11.0900    8.8030     1    P3V3_STBY         816
+
+Part C1293  (T)
+   1    1   11.0920    8.7400     1    P3V3_STBY         816
+   2    2   11.1280    8.7400     1    GND               933
+
+Part U77    (T)
+   1    1   11.0321    8.8078     1    BUF1_EN           1606
+   2    2   11.0065    8.8078     1    PWRGD_HSC_SLOT    97
+   3    3   10.9809    8.8078     1    GND               933
+   4    4   10.9809    8.7428     1    PWRGD_HSC_SLOT_BIC_R  1605
+   5    5   11.0321    8.7428     1    P3V3_STBY         816
+
+
+[Part 3]Exit only in 23W11-1
+
+Part            T/B
+Pin      Name       X        Y       Layer   Net                    Nail(s)
+Part R1903  (B)
+   1    1    1.8955    5.5480     2    I3C_CPU_APML_R_SCL  
+   2    2    1.8595    5.5480     2    I3C_CPU_APML_SCL  582
+
+Part R1904  (B)
+   1    1    1.8680    5.4970     2    I3C_CPU_APML_R_SDA  
+   2    2    1.8320    5.4970     2    I3C_CPU_APML_SDA  583
+
+Part R1905  (B)
+   1    1    3.1645    6.0109     2    P1V2_STBY         126
+   2    2    3.1970    6.0109     2    I3C_CPU_APML_R2_SCL  584
+
+Part R1906  (B)
+   1    1    3.2599    6.0109     2    P1V2_STBY         126
+   2    2    3.2275    6.0109     2    I3C_CPU_APML_R2_SDA  585
+
+Part R1907  (B)
+   1    1    3.3525    5.9755     2    P1V2_STBY         126
+   2    2    3.3525    6.0095     2    I3C_LS_VCCB       
+
+Part R1908  (B)
+   1    1    3.4280    6.0100     2    P1V8_STBY         1037
+   2    2    3.3920    6.0100     2    I3C_LS_VCCB       
+
+Part JCN5   (T)
+   3    3    0.1183    8.0193     1    NC_5093           
+
+Part JCN21  (T)
+   3    3    0.1183    7.6638     1    NC_5094           
+
