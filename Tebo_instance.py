@@ -1,37 +1,13 @@
 import os
 from os.path import join, exists
-import re
 
+import math
 import pandas as pd
+
 from Instance import get_executable_path
+from Instance import create_or_replace_file
 
-
-def parse_Nailsasc(filepath):
-    """
-    解析 ASC 檔案，回傳包含 X, Y, T/B, Net Name 的 DataFrame。
-    - 自動跳過表頭行
-    - 只解析以 $ 開頭的資料行
-    """
-    records = []
-    with open(filepath, "r", encoding="utf-8", errors="ignore") as f:
-        for line in f:
-            line = line.strip()
-            # 跳過表頭與空行，只處理 $ 開頭的資料行
-            if not line.startswith("$"):
-                continue
-            parts = line.split()
-            # parts 範例：
-            # ['$1','2.4303','4.3900','5','AA','(T)','#798','FM_PVDDIO_MEM_S3_EN','T','PIN','TB_TP103.1']
-            x = float(parts[1])
-            y = float(parts[2])
-            tb = parts[5].strip("()")   # 去掉括號，只留 T 或 B
-            net_name = parts[7]         # Net Name 在第 8 欄
-            records.append({"X": x, "Y": y, "T/B": tb, "Net Name": net_name})
-
-    return pd.DataFrame(records)
-
-
-
+from TeboCADProcess import *
 
 
 def Tebo_instance():
@@ -40,9 +16,21 @@ def Tebo_instance():
     print(f"執行檔所在目錄: {executable_dir}")
 
 
-    data = parse_Nailsasc(os.path.join(executable_dir, "25W12-SB_1212YHQ1340_CAD-Basic", "Nails.asc"))
-    print(data.head())
-    print(data.tail())
+    CAD_new = parse_Nailsasc(os.path.join(executable_dir, "25W12-SB_1216WYHQ1400_cad-Basic", Nails_asc_name))
+    # print(CAD_new.head())
+    # print(CAD_new.tail())
+
+    CAD_old = parse_Nailsasc(os.path.join(executable_dir, "25W12-SB_1212YHQ1340_CAD-Basic", Nails_asc_name))
+    # print(CAD_old.tail())
+     
+    CAD_Nailsasc_shift = find_Nailsasc_shift(CAD_new, CAD_old)
+    # print(CAD_Nailsasc_shift)
+
+    create_or_replace_file(os.path.join(executable_dir, Nails_asc_output))
+    save_Nails_shift_notebook(CAD_Nailsasc_shift)  # 預設存成 Diff_Nails_report.txt
+
+
+     
     return None
 
 
