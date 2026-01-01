@@ -14,8 +14,10 @@ Old_CAD_folder = "25W12-SB_1212YHQ1340_CAD-Basic"
 
 def Tebo_instance():
 
+    # execute_Nails_summary(Nails_asc_output, New_CAD_folder, Old_CAD_folder)
 
-    execute_Nails_summary(Nails_asc_output, New_CAD_folder, Old_CAD_folder)
+    execute_Parts_summary(Parts_asc_output, New_CAD_folder, Old_CAD_folder)
+
 
     return None
 

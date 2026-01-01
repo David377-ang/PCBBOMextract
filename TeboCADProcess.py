@@ -7,9 +7,15 @@ from Instance import get_executable_path
 from Instance import create_or_replace_file
 
 Nails_shift_threshold = 3  # mil
+Parts_shift_threshold = 3  # mil
 
 Nails_asc_name = "Nails.asc"
 Nails_asc_output = "Diff_Nails_report.txt"
+
+
+Parts_asc_name = "Parts.asc"
+Parts_asc_output = "Diff_Parts_report.txt"
+
 
 def separator(char="-", length=100):
     return char * length
@@ -323,6 +329,275 @@ def execute_Nails_summary(filepath=Nails_asc_output, label_new="CAD_new", label_
 
     CAD_Nailsasc_add = find_Nailsasc_Add(CAD_new, CAD_old)
     save_Nails_add_notebook(CAD_Nailsasc_add, filepath, label_new, label_old)
+
+
+    return None
+
+
+def parse_Partsasc(filename):
+    parts_list = []
+    with open(filename, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("Part"):  # 跳過標題行
+                continue
+
+            tokens = line.split()
+            try:
+                x = float(tokens[1])
+                y = float(tokens[2])
+                rot = float(tokens[3])
+            except ValueError:
+                # 如果不是數字，跳過這行
+                continue
+
+            part = tokens[0]
+            grid = tokens[4]
+            tb = tokens[5].strip("()")
+
+            parts_list.append({
+                "Part": part,
+                "X": x,
+                "Y": y,
+                "Rot": rot,
+                "Grid": grid,
+                "T/B": tb
+            })
+    return parts_list
+
+
+def save_Parts_summary_notebook(filepath=Parts_asc_output, label_new="CAD_new", label_old="CAD_old"):
+    """
+    在報告檔案 Diff_Parts_report.txt 加入 Summary 區塊
+    格式：
+           WYMTN Difference Report For Parts       Time YYYY/MM/DD HH:MM       Unit:Inch
+
+    ================================================================================================
+    Summary :(The Comparison base Version is <label_old>)
+    New Version :<label_new>
+    Old Version :<label_old>
+    ------------------------------------------------------------------------------------------------
+    """
+
+    now = datetime.now()
+    time_str = now.strftime("%Y/%m/%d %H:%M")
+
+
+    lines = []
+    lines.append(f"       WYMTN Difference Report For Partss       Time {time_str}       Unit:Inch")
+    lines.append("=" * 100)
+    lines.append(f"Summary :(The Comparison base Version is {label_old})")
+    lines.append(f"New Version :{label_new}")
+    lines.append(f"Old Version :{label_old}")
+    lines.append("-" * 100)
+    lines.append("")  # 空行分隔
+
+    # 續寫到檔案 (append 模式，不覆蓋前面內容)
+    with open(filepath, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"Parts Summary 已續寫到 {filepath}")
+
+
+
+def find_Partsasc_shift(CAD_new, CAD_old, threshold_mil=3.0):
+    """
+    找出同一個 Part 在新舊版本座標或旋轉角度不同的情況 (Shift 類別)
+    - 若 XY 距離 >= threshold_mil，列入 Shift
+    - 若 Rot 不同，也列入 Shift
+    回傳 list of dict，包含新舊座標、旋轉角度與距離
+    """
+    old_map = {item["Part"]: item for item in CAD_old}
+    new_map = {item["Part"]: item for item in CAD_new}
+
+    shift_list = []
+    for part, new_item in new_map.items():
+        if part in old_map:
+            old_item = old_map[part]
+            dx = new_item["X"] - old_item["X"]
+            dy = new_item["Y"] - old_item["Y"]
+            dist_inch = math.sqrt(dx**2 + dy**2)
+            dist_mil = dist_inch * 1000.0
+
+            rot_diff = abs(new_item["Rot"] - old_item["Rot"])
+
+            # 判斷是否列入 Shift
+            if dist_mil >= threshold_mil or rot_diff > 0.0001:
+                shift_list.append({
+                    "Part": part,
+                    "New": new_item,
+                    "Old": old_item,
+                    "Distance_inch": dist_inch,
+                    "Distance_mil": dist_mil,
+                    "Rot_diff": rot_diff
+                })
+    return shift_list
+
+def save_Parts_shift_notebook(shift_list, filepath="Diff_Parts_report.txt", label_new="CAD_new", label_old="CAD_old"):
+    """
+    將 find_Partsasc_shift 的結果存成筆記本文字檔
+    格式：
+    [Part 1] Shift Parts
+    TOP Side = N
+    Bottom Side = M
+
+    Following xy location of parts be shifted between two version
+    <label_new>   Part   X   Y   Rot   Grid   (T/B)
+    <label_old>   Part   X   Y   Rot   Grid   (T/B)
+    Distance = xxx inch (yyy mil), Rot diff = zzz deg ***
+    """
+    lines = []
+    lines.append("[Part 1] Shift Parts")
+
+    # 統計正面/背面數量
+    top_count = sum(1 for item in shift_list if item["New"]["T/B"].upper() == "T")
+    bottom_count = sum(1 for item in shift_list if item["New"]["T/B"].upper() == "B")
+
+    lines.append(f"TOP Side  = {top_count}")
+    lines.append(f"Bottom Side  = {bottom_count}")
+    lines.append("")  # 空行
+    lines.append("Following xy location of parts be shifted between two version")
+
+    for item in shift_list:
+        new = item["New"]
+        old = item["Old"]
+        lines.append(f"{label_new}   {new['Part']}   {new['X']:.4f}   {new['Y']:.4f}   {new['Rot']:.1f}   {new['Grid']}   ({new['T/B']})")
+        lines.append(f"{label_old}   {old['Part']}   {old['X']:.4f}   {old['Y']:.4f}   {old['Rot']:.1f}   {old['Grid']}   ({old['T/B']})")
+        lines.append(f"Distance = {item['Distance_inch']:.4f} inch ({item['Distance_mil']:.1f} mil), Rot diff = {item['Rot_diff']:.1f} deg ***")
+        lines.append("")  # 每組之間空行
+
+    lines.append("")  # 區塊結尾空行
+
+    with open(filepath, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"Shift 結果已續寫到 {filepath}")
+
+
+def find_Partsasc_Del(CAD_new, CAD_old):
+    """
+    找出只存在 CAD_old 而 CAD_new 沒有的 Part (Del 類別)
+    回傳 list of dict
+    """
+    new_parts = {item["Part"] for item in CAD_new}
+    old_parts = {item["Part"] for item in CAD_old}
+
+    del_parts = old_parts - new_parts
+    del_list = [item for item in CAD_old if item["Part"] in del_parts]
+
+    return del_list
+
+def save_Parts_del_notebook(del_list, filepath=Parts_asc_output, label_new="CAD_new", label_old="CAD_old"):
+    """
+    將 find_Partsasc_Del 的結果存成筆記本文字檔
+    格式：
+    [Part 2] Del Parts
+    TOP Side = N
+    Bottom Side = M
+
+    Following are in <label_old> Version, but not found in <label_new> Version
+    <label_old>   Part   X   Y   Rot   Grid   (T/B)
+    """
+    lines = []
+    lines.append(separator())
+    lines.append("[Part 2] Del Parts")
+
+    top_count = sum(1 for item in del_list if item["T/B"].upper() == "T")
+    bottom_count = sum(1 for item in del_list if item["T/B"].upper() == "B")
+
+    lines.append(f"TOP Side  = {top_count}")
+    lines.append(f"Bottom Side  = {bottom_count}")
+    lines.append("")  # 空行
+    lines.append(f"Following are in {label_old} Version, but not found in {label_new} Version")
+
+    for item in del_list:
+        lines.append(
+            f"{label_old}   {item['Part']}   {item['X']:.4f}   {item['Y']:.4f}   {item['Rot']:.1f}   {item['Grid']}   ({item['T/B']})"
+        )
+
+    lines.append("")  # 區塊結尾空行
+
+    with open(filepath, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"Del 結果已續寫到 {filepath}")
+
+
+def find_Partsasc_Add(CAD_new, CAD_old):
+    """
+    找出只存在 CAD_new 而 CAD_old 沒有的 Part (Add 類別)
+    回傳 list of dict
+    """
+    new_parts = {item["Part"] for item in CAD_new}
+    old_parts = {item["Part"] for item in CAD_old}
+
+    add_parts = new_parts - old_parts
+    add_list = [item for item in CAD_new if item["Part"] in add_parts]
+
+    return add_list
+
+
+
+def save_Parts_add_notebook(add_list, filepath=Parts_asc_output, label_new="CAD_new", label_old="CAD_old"):
+    """
+    將 find_Partsasc_Add 的結果存成筆記本文字檔
+    格式：
+    [Part 3] Add Parts
+    TOP Side = N
+    Bottom Side = M
+
+    Following are in <label_new> Version, but not found in <label_old> Version
+    <label_new>   Part   X   Y   Rot   Grid   (T/B)
+    """
+    lines = []
+    lines.append(separator())
+    lines.append("[Part 3] Add Parts")
+
+    top_count = sum(1 for item in add_list if item["T/B"].upper() == "T")
+    bottom_count = sum(1 for item in add_list if item["T/B"].upper() == "B")
+
+    lines.append(f"TOP Side  = {top_count}")
+    lines.append(f"Bottom Side  = {bottom_count}")
+    lines.append("")  # 空行
+    lines.append(f"Following are in {label_new} Version, but not found in {label_old} Version")
+
+    for item in add_list:
+        lines.append(
+            f"{label_new}   {item['Part']}   {item['X']:.4f}   {item['Y']:.4f}   {item['Rot']:.1f}   {item['Grid']}   ({item['T/B']})"
+        )
+
+    lines.append("")  # 區塊結尾空行
+
+    with open(filepath, "a", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"Add 結果已續寫到 {filepath}")
+
+
+def execute_Parts_summary(filepath=Parts_asc_output, label_new="CAD_new", label_old="CAD_old"):
+
+    executable_dir = get_executable_path()
+    print(f"執行檔所在目錄: {executable_dir}")
+
+     
+    create_or_replace_file(os.path.join(executable_dir, filepath))
+
+    CAD_new = parse_Partsasc(os.path.join(executable_dir, label_new, Parts_asc_name))
+    print("總筆數 =", len(CAD_new))
+
+    CAD_old = parse_Partsasc(os.path.join(executable_dir, label_old, Parts_asc_name))
+    print("總筆數 =", len(CAD_old))
+
+    save_Parts_summary_notebook(filepath, label_new, label_old)
+
+    CAD_Partsasc_shift = find_Partsasc_shift(CAD_new, CAD_old, Parts_shift_threshold)
+    save_Parts_shift_notebook(CAD_Partsasc_shift, filepath, label_new, label_old)
+
+    CAD_Partsasc_Del = find_Partsasc_Del(CAD_new, CAD_old)
+    save_Parts_del_notebook(CAD_Partsasc_Del, filepath, label_new, label_old)
+
+    CAD_Partsasc_Add = find_Partsasc_Add(CAD_new, CAD_old)
+    save_Parts_add_notebook(CAD_Partsasc_Add, filepath, label_new, label_old)
 
 
     return None
