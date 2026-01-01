@@ -14,9 +14,26 @@ Old_CAD_folder = "25W12-SB_1212YHQ1340_CAD-Basic"
 
 def Tebo_instance():
 
-    # execute_Nails_summary(Nails_asc_output, New_CAD_folder, Old_CAD_folder)
+    print("please key in new cad folder:")
+    new_folder = input().strip()
 
-    execute_Parts_summary(Parts_asc_output, New_CAD_folder, Old_CAD_folder)
+    print("please key in old cad folder:")
+    old_folder = input().strip()
+
+
+    # 確認路徑存在
+    if not os.path.exists(new_folder):
+        print(f"Error: new cad folder '{new_folder}' not found.")
+        return
+    if not os.path.exists(old_folder):
+        print(f"Error: old cad folder '{old_folder}' not found.")
+        return
+
+    execute_Nails_summary(Nails_asc_output, new_folder, old_folder)
+    execute_Parts_summary(Parts_asc_output, new_folder, old_folder)
+    
+    # execute_Nails_summary(Nails_asc_output, New_CAD_folder, Old_CAD_folder)
+    # execute_Parts_summary(Parts_asc_output, New_CAD_folder, Old_CAD_folder)
 
 
     return None
