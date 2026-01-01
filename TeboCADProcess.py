@@ -1,5 +1,10 @@
+import os
+from os.path import join, exists
 import math
 import pandas as pd
+from datetime import datetime
+from Instance import get_executable_path
+from Instance import create_or_replace_file
 
 Nails_shift_threshold = 3  # mil
 
@@ -145,7 +150,7 @@ def save_Nails_shift_notebook(
         lines.append(f"Distance = {distance_inch:.4f} inch ({distance_mil:.1f} mil){mark}")
         lines.append("")  # 空行分隔
 
-    with open(filepath, "w", encoding="utf-8") as f:
+    with open(filepath, "a", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
     print(f"Shift 結果已存到 {filepath} (閾值 = {threshold_mil} mil)")
@@ -225,7 +230,7 @@ def find_Nailsasc_Del(CAD_new, CAD_old):
     return del_list
 
 
-def save_Nails_del_notebook(del_list, filepath="Diff_Nails_report.txt", label_new="CAD_new", label_old="CAD_old"):
+def save_Nails_del_notebook(del_list, filepath=Nails_asc_output, label_new="CAD_new", label_old="CAD_old"):
     """
     將 find_Nailsasc_Del 的結果存成筆記本文字檔
     格式：
@@ -261,3 +266,63 @@ def save_Nails_del_notebook(del_list, filepath="Diff_Nails_report.txt", label_ne
         f.write("\n".join(lines) + "\n")
 
     print(f"Del 結果已續寫到 {filepath}")
+
+def save_Nails_summary_notebook(filepath=Nails_asc_output, label_new="CAD_new", label_old="CAD_old"):
+    """
+    在報告檔案 Diff_Nails_report.txt 加入 Summary 區塊
+    格式：
+    ================================================================================================
+    Summary :(The Comparison base Version is <label_old>)
+    New Version :<label_new>
+    Old Version :<label_old>
+    ------------------------------------------------------------------------------------------------
+    """
+    now = datetime.now()
+    time_str = now.strftime("%Y/%m/%d %H:%M")
+
+
+    lines = []
+    lines.append(f"       WYMTN Difference Report For Nails       Time {time_str}       Unit:Inch")
+    lines.append(separator("="))
+    lines.append(f"Summary :(The Comparison base Version is {label_old})")
+    lines.append(f"New Version :{label_new}")
+    lines.append(f"Old Version :{label_old}")
+    lines.append(separator())
+    lines.append("")  # 空行分隔
+
+    # 續寫到檔案 (append 模式，不覆蓋前面內容)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+
+    print(f"Summary 已續寫到 {filepath}")
+
+def execute_Nails_summary(filepath=Nails_asc_output, label_new="CAD_new", label_old="CAD_old"):
+
+    executable_dir = get_executable_path()
+    print(f"執行檔所在目錄: {executable_dir}")
+
+     
+    create_or_replace_file(os.path.join(executable_dir, filepath))
+
+    CAD_new = parse_Nailsasc(os.path.join(executable_dir, label_new, Nails_asc_name))
+    # print(CAD_new.head())
+    # print(CAD_new.tail())
+
+    CAD_old = parse_Nailsasc(os.path.join(executable_dir, label_old, Nails_asc_name))
+    # print(CAD_old.tail())
+
+    save_Nails_summary_notebook(filepath, label_new, label_old)
+
+    CAD_Nailsasc_shift = find_Nailsasc_shift(CAD_new, CAD_old)
+    save_Nails_shift_notebook(CAD_Nailsasc_shift, filepath, Nails_shift_threshold, label_new, label_old)  # 預設存成 Diff_Nails_report.txt
+
+
+    CAD_Nailsasc_del = find_Nailsasc_Del(CAD_new, CAD_old)
+    save_Nails_del_notebook(CAD_Nailsasc_del, filepath, label_new, label_old)
+
+
+    CAD_Nailsasc_add = find_Nailsasc_Add(CAD_new, CAD_old)
+    save_Nails_add_notebook(CAD_Nailsasc_add, filepath, label_new, label_old)
+
+
+    return None

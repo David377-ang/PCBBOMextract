@@ -1,131 +1,138 @@
+       WYMTN Difference Report For Nails       Time 2026/01/01 18:23       Unit:Inch
+====================================================================================================
+Summary :(The Comparison base Version is 25W12-SB_1212YHQ1340_CAD-Basic)
+New Version :25W12-SB_1216WYHQ1400_cad-Basic
+Old Version :25W12-SB_1212YHQ1340_CAD-Basic
+----------------------------------------------------------------------------------------------------
+
 [Part 1] Shift Nails
 TOP Side  = 1
 Bottom Side  = 22
 
 Following xy location of test point be shifted between two version
-25W12-SB_1216     4.5898    0.9440   (B)   JTAG_PLD_R_TDI
-25W12-SB_1212     4.6992    0.8056   (T)   JTAG_PLD_R_TDI
-Distance = 0.1764 inch (176.4 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.4302    1.1987   (B)   IRQ_SML1_ALERT_N
+25W12-SB_1212YHQ1340_CAD-Basic     5.0270    0.1040   (T)   IRQ_SML1_ALERT_N
+Distance = 1.2468 inch (1246.8 mil) ***
 
-25W12-SB_1216     3.7402    0.6339   (T)   FM_CPU_PWRBTN_CPLD_N
-25W12-SB_1212     4.7450    0.9000   (T)   FM_CPU_PWRBTN_CPLD_N
-Distance = 1.0394 inch (1039.4 mil) ***
-
-25W12-SB_1216     4.7767    1.9733   (B)   PWRGD_P3V3_STBY_N
-25W12-SB_1212     4.6665    1.5866   (B)   PWRGD_P3V3_STBY_N
-Distance = 0.4021 inch (402.1 mil) ***
-
-25W12-SB_1216     3.8755    1.0395   (B)   ESPI_ALERT_MUX_SEL
-25W12-SB_1212     3.8800    1.0440   (B)   ESPI_ALERT_MUX_SEL
-Distance = 0.0064 inch (6.4 mil) ***
-
-25W12-SB_1216     4.7220    0.4340   (B)   P1V_P1V8_ADC_REFP0_L
-25W12-SB_1212     4.7372    0.4364   (B)   P1V_P1V8_ADC_REFP0_L
+25W12-SB_1216WYHQ1400_cad-Basic     4.7220    0.4340   (B)   P1V_P1V8_ADC_REFP0_L
+25W12-SB_1212YHQ1340_CAD-Basic     4.7372    0.4364   (B)   P1V_P1V8_ADC_REFP0_L
 Distance = 0.0154 inch (15.4 mil) ***
 
-25W12-SB_1216     4.1348    0.7438   (B)   SMB_PLD_SDA
-25W12-SB_1212     4.1348    0.7430   (B)   SMB_PLD_SDA
-Distance = 0.0008 inch (0.8 mil)
-
-25W12-SB_1216     3.2650    0.6250   (B)   JTAG_BMC_TDI
-25W12-SB_1212     3.2690    0.6140   (B)   JTAG_BMC_TDI
-Distance = 0.0117 inch (11.7 mil) ***
-
-25W12-SB_1216     4.0406    1.4319   (B)   SPI_MUX_SEL
-25W12-SB_1212     4.1250    1.3805   (B)   SPI_MUX_SEL
-Distance = 0.0988 inch (98.8 mil) ***
-
-25W12-SB_1216     4.5058    1.6399   (B)   EN_LVS_CPLD_R
-25W12-SB_1212     4.5126    1.9466   (B)   EN_LVS_CPLD_R
-Distance = 0.3068 inch (306.8 mil) ***
-
-25W12-SB_1216     4.7930    1.3960   (B)   SPI_BMC_LVS_EN
-25W12-SB_1212     4.6407    1.3840   (B)   SPI_BMC_LVS_EN
-Distance = 0.1528 inch (152.8 mil) ***
-
-25W12-SB_1216     2.0150    3.6850   (B)   GND
-25W12-SB_1212     1.3100    3.7300   (B)   GND
+25W12-SB_1216WYHQ1400_cad-Basic     2.0150    3.6850   (B)   GND
+25W12-SB_1212YHQ1340_CAD-Basic     1.3100    3.7300   (B)   GND
 Distance = 0.7064 inch (706.4 mil) ***
 
-25W12-SB_1216     4.0403    0.7280   (B)   UART_BMC_PLD_TX
-25W12-SB_1212     3.5041    0.0837   (B)   UART_BMC_PLD_TX
-Distance = 0.8382 inch (838.2 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.5058    1.6399   (B)   EN_LVS_CPLD_R
+25W12-SB_1212YHQ1340_CAD-Basic     4.5126    1.9466   (B)   EN_LVS_CPLD_R
+Distance = 0.3068 inch (306.8 mil) ***
 
-25W12-SB_1216     4.5524    1.8800   (B)   PWRGD_P3V3_STBY_LV
-25W12-SB_1212     4.8240    1.3620   (B)   PWRGD_P3V3_STBY_LV
-Distance = 0.5849 inch (584.9 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.5898    0.9440   (B)   JTAG_PLD_R_TDI
+25W12-SB_1212YHQ1340_CAD-Basic     4.6992    0.8056   (T)   JTAG_PLD_R_TDI
+Distance = 0.1764 inch (176.4 mil) ***
 
-25W12-SB_1216     4.0704    0.7679   (B)   ESPI_CS_MUX_PLD_SEL
-25W12-SB_1212     4.0720    0.7600   (B)   ESPI_CS_MUX_PLD_SEL
-Distance = 0.0081 inch (8.1 mil) ***
-
-25W12-SB_1216     4.4641    1.5878   (B)   EN_LVS_CPLD
-25W12-SB_1212     4.4466    1.9076   (B)   EN_LVS_CPLD
+25W12-SB_1216WYHQ1400_cad-Basic     4.4641    1.5878   (B)   EN_LVS_CPLD
+25W12-SB_1212YHQ1340_CAD-Basic     4.4466    1.9076   (B)   EN_LVS_CPLD
 Distance = 0.3203 inch (320.3 mil) ***
 
-25W12-SB_1216     4.2273    0.5870   (B)   A_P1V8_SCALED
-25W12-SB_1212     4.2260    0.5800   (B)   A_P1V8_SCALED
-Distance = 0.0071 inch (7.1 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     3.2650    0.6250   (B)   JTAG_BMC_TDI
+25W12-SB_1212YHQ1340_CAD-Basic     3.2690    0.6140   (B)   JTAG_BMC_TDI
+Distance = 0.0117 inch (11.7 mil) ***
 
-25W12-SB_1216     4.7871    1.7975   (B)   A_P5V_STBY_ADC_LV
-25W12-SB_1212     4.8457    1.5416   (B)   A_P5V_STBY_ADC_LV
-Distance = 0.2625 inch (262.5 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.1348    0.7438   (B)   SMB_PLD_SDA
+25W12-SB_1212YHQ1340_CAD-Basic     4.1348    0.7430   (B)   SMB_PLD_SDA
+Distance = 0.0008 inch (0.8 mil)
 
-25W12-SB_1216     4.5890    1.1105   (B)   FM_P1V8_AUDIO_EN
-25W12-SB_1212     4.5540    1.0590   (B)   FM_P1V8_AUDIO_EN
+25W12-SB_1216WYHQ1400_cad-Basic     4.5890    1.1105   (B)   FM_P1V8_AUDIO_EN
+25W12-SB_1212YHQ1340_CAD-Basic     4.5540    1.0590   (B)   FM_P1V8_AUDIO_EN
 Distance = 0.0623 inch (62.3 mil) ***
 
-25W12-SB_1216     4.6120    1.0675   (B)   PWRGD_P1V_STBY
-25W12-SB_1212     4.6085    1.0720   (B)   PWRGD_P1V_STBY
-Distance = 0.0057 inch (5.7 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.7871    1.7975   (B)   A_P5V_STBY_ADC_LV
+25W12-SB_1212YHQ1340_CAD-Basic     4.8457    1.5416   (B)   A_P5V_STBY_ADC_LV
+Distance = 0.2625 inch (262.5 mil) ***
 
-25W12-SB_1216     4.3815    1.2083   (B)   IRQ_SML1_ALERT_BUF_N
-25W12-SB_1212     4.2830    1.2560   (B)   IRQ_SML1_ALERT_BUF_N
-Distance = 0.1094 inch (109.4 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.0704    0.7679   (B)   ESPI_CS_MUX_PLD_SEL
+25W12-SB_1212YHQ1340_CAD-Basic     4.0720    0.7600   (B)   ESPI_CS_MUX_PLD_SEL
+Distance = 0.0081 inch (8.1 mil) ***
 
-25W12-SB_1216     4.6507    1.9450   (B)   A_P12V_STBY_ADC_LV
-25W12-SB_1212     4.7660    1.3620   (B)   A_P12V_STBY_ADC_LV
-Distance = 0.5943 inch (594.3 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.5524    1.8800   (B)   PWRGD_P3V3_STBY_LV
+25W12-SB_1212YHQ1340_CAD-Basic     4.8240    1.3620   (B)   PWRGD_P3V3_STBY_LV
+Distance = 0.5849 inch (584.9 mil) ***
 
-25W12-SB_1216     4.8370    1.4280   (B)   SPI_BMC_LVS_EN_R
-25W12-SB_1212     4.7036    1.3629   (B)   SPI_BMC_LVS_EN_R
+25W12-SB_1216WYHQ1400_cad-Basic     4.7930    1.3960   (B)   SPI_BMC_LVS_EN
+25W12-SB_1212YHQ1340_CAD-Basic     4.6407    1.3840   (B)   SPI_BMC_LVS_EN
+Distance = 0.1528 inch (152.8 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.8370    1.4280   (B)   SPI_BMC_LVS_EN_R
+25W12-SB_1212YHQ1340_CAD-Basic     4.7036    1.3629   (B)   SPI_BMC_LVS_EN_R
 Distance = 0.1484 inch (148.4 mil) ***
 
-25W12-SB_1216     4.4302    1.1987   (B)   IRQ_SML1_ALERT_N
-25W12-SB_1212     5.0270    0.1040   (T)   IRQ_SML1_ALERT_N
-Distance = 1.2468 inch (1246.8 mil) ***
+25W12-SB_1216WYHQ1400_cad-Basic     4.0403    0.7280   (B)   UART_BMC_PLD_TX
+25W12-SB_1212YHQ1340_CAD-Basic     3.5041    0.0837   (B)   UART_BMC_PLD_TX
+Distance = 0.8382 inch (838.2 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     3.8755    1.0395   (B)   ESPI_ALERT_MUX_SEL
+25W12-SB_1212YHQ1340_CAD-Basic     3.8800    1.0440   (B)   ESPI_ALERT_MUX_SEL
+Distance = 0.0064 inch (6.4 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.3815    1.2083   (B)   IRQ_SML1_ALERT_BUF_N
+25W12-SB_1212YHQ1340_CAD-Basic     4.2830    1.2560   (B)   IRQ_SML1_ALERT_BUF_N
+Distance = 0.1094 inch (109.4 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.2273    0.5870   (B)   A_P1V8_SCALED
+25W12-SB_1212YHQ1340_CAD-Basic     4.2260    0.5800   (B)   A_P1V8_SCALED
+Distance = 0.0071 inch (7.1 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.7767    1.9733   (B)   PWRGD_P3V3_STBY_N
+25W12-SB_1212YHQ1340_CAD-Basic     4.6665    1.5866   (B)   PWRGD_P3V3_STBY_N
+Distance = 0.4021 inch (402.1 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.6507    1.9450   (B)   A_P12V_STBY_ADC_LV
+25W12-SB_1212YHQ1340_CAD-Basic     4.7660    1.3620   (B)   A_P12V_STBY_ADC_LV
+Distance = 0.5943 inch (594.3 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     3.7402    0.6339   (T)   FM_CPU_PWRBTN_CPLD_N
+25W12-SB_1212YHQ1340_CAD-Basic     4.7450    0.9000   (T)   FM_CPU_PWRBTN_CPLD_N
+Distance = 1.0394 inch (1039.4 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.6120    1.0675   (B)   PWRGD_P1V_STBY
+25W12-SB_1212YHQ1340_CAD-Basic     4.6085    1.0720   (B)   PWRGD_P1V_STBY
+Distance = 0.0057 inch (5.7 mil) ***
+
+25W12-SB_1216WYHQ1400_cad-Basic     4.0406    1.4319   (B)   SPI_MUX_SEL
+25W12-SB_1212YHQ1340_CAD-Basic     4.1250    1.3805   (B)   SPI_MUX_SEL
+Distance = 0.0988 inch (98.8 mil) ***
 ----------------------------------------------------------------------------------------------------
 [Part 2] Del Nails
 TOP Side  = 1
 Bottom Side  = 2
 
-Following are in 25W12-SB_1212 Version, but not found in 25W12-SB_1216 Version
-25W12-SB_1212     4.8197    0.7202   (T)   LED_POSTCODE_6
-25W12-SB_1212     4.2410    1.3050   (B)   PWRGD_P1V8_STBY
-25W12-SB_1212     4.1650    1.2820   (B)   PWRGD_P3V3_STBY
+Following are in 25W12-SB_1212YHQ1340_CAD-Basic Version, but not found in 25W12-SB_1216WYHQ1400_cad-Basic Version
+25W12-SB_1212YHQ1340_CAD-Basic     4.8197    0.7202   (T)   LED_POSTCODE_6
+25W12-SB_1212YHQ1340_CAD-Basic     4.2410    1.3050   (B)   PWRGD_P1V8_STBY
+25W12-SB_1212YHQ1340_CAD-Basic     4.1650    1.2820   (B)   PWRGD_P3V3_STBY
 
 ----------------------------------------------------------------------------------------------------
 [Part 3] Add Nails
 TOP Side  = 10
 Bottom Side  = 8
 
-Following are in 25W12-SB_1216 Version, but not found in 25W12-SB_1212 Version
-25W12-SB_1216     4.6958    0.9725   (T)   LED_CONTROL_2
-25W12-SB_1216     4.6942    0.9073   (T)   LED_CONTROL_7
-25W12-SB_1216     4.7438    0.9027   (T)   EN_LPC_CLK_BUF_RSVD
-25W12-SB_1216     4.8537    0.9145   (T)   LED_CONTROL_0
-25W12-SB_1216     4.8741    0.8698   (T)   LED_CONTROL_6
-25W12-SB_1216     4.6852    0.7351   (T)   LED_CONTROL_5
-25W12-SB_1216     0.4931    1.0746   (T)   CPU_I2C_BMC_SIC_SCL
-25W12-SB_1216     0.4788    1.1800   (T)   CPU_I2C_BMC_R_SIC_SCL
-25W12-SB_1216     0.5268    1.1798   (T)   FM_APML_I2C0_MUX_SEL
-25W12-SB_1216     0.4025    1.4780   (T)   CPU_I2C_P3V3_STBY_SID
-25W12-SB_1216     4.5547    1.8311   (B)   A_P5V_STBY_SCALED
-25W12-SB_1216     4.7300    0.6190   (B)   PD_ESPI_ALERT_HNSK
-25W12-SB_1216     4.6365    0.5505   (B)   A_P1V8_STBY_SCALED
-25W12-SB_1216     4.6982    0.5255   (B)   A_PVDD_MISC_S5_ADC_LV
-25W12-SB_1216     4.6829    0.4800   (B)   A_PVDD_MISC_S5_SENSE
-25W12-SB_1216     4.4201    0.7744   (B)   FM_PVDD_MISC_EN
-25W12-SB_1216     4.5411    1.1414   (B)   SMB_SENSOR_STBY_LVC3_R_SDA
-25W12-SB_1216     2.7923    0.4420   (B)   P12V_STBY_COME
+Following are in 25W12-SB_1216WYHQ1400_cad-Basic Version, but not found in 25W12-SB_1212YHQ1340_CAD-Basic Version
+25W12-SB_1216WYHQ1400_cad-Basic     4.6958    0.9725   (T)   LED_CONTROL_2
+25W12-SB_1216WYHQ1400_cad-Basic     4.6942    0.9073   (T)   LED_CONTROL_7
+25W12-SB_1216WYHQ1400_cad-Basic     4.7438    0.9027   (T)   EN_LPC_CLK_BUF_RSVD
+25W12-SB_1216WYHQ1400_cad-Basic     4.8537    0.9145   (T)   LED_CONTROL_0
+25W12-SB_1216WYHQ1400_cad-Basic     4.8741    0.8698   (T)   LED_CONTROL_6
+25W12-SB_1216WYHQ1400_cad-Basic     4.6852    0.7351   (T)   LED_CONTROL_5
+25W12-SB_1216WYHQ1400_cad-Basic     0.4931    1.0746   (T)   CPU_I2C_BMC_SIC_SCL
+25W12-SB_1216WYHQ1400_cad-Basic     0.4788    1.1800   (T)   CPU_I2C_BMC_R_SIC_SCL
+25W12-SB_1216WYHQ1400_cad-Basic     0.5268    1.1798   (T)   FM_APML_I2C0_MUX_SEL
+25W12-SB_1216WYHQ1400_cad-Basic     0.4025    1.4780   (T)   CPU_I2C_P3V3_STBY_SID
+25W12-SB_1216WYHQ1400_cad-Basic     4.5547    1.8311   (B)   A_P5V_STBY_SCALED
+25W12-SB_1216WYHQ1400_cad-Basic     4.7300    0.6190   (B)   PD_ESPI_ALERT_HNSK
+25W12-SB_1216WYHQ1400_cad-Basic     4.6365    0.5505   (B)   A_P1V8_STBY_SCALED
+25W12-SB_1216WYHQ1400_cad-Basic     4.6982    0.5255   (B)   A_PVDD_MISC_S5_ADC_LV
+25W12-SB_1216WYHQ1400_cad-Basic     4.6829    0.4800   (B)   A_PVDD_MISC_S5_SENSE
+25W12-SB_1216WYHQ1400_cad-Basic     4.4201    0.7744   (B)   FM_PVDD_MISC_EN
+25W12-SB_1216WYHQ1400_cad-Basic     4.5411    1.1414   (B)   SMB_SENSOR_STBY_LVC3_R_SDA
+25W12-SB_1216WYHQ1400_cad-Basic     2.7923    0.4420   (B)   P12V_STBY_COME
 
